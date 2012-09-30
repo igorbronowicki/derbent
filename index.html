@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Билайн-Кафе</title>
+
+	<link rel="stylesheet" type="text/css" href="static/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="static/base.css" media="all" />
+	<link rel="stylesheet/less" type="text/css" href="static/palettes.less">
+
+	<script type="text/javascript" src="static/less.js"></script>
+	<script type="text/javascript" src="static/jquery.js"></script>
+	<script type="text/javascript" src="static/init.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#p-find button').click(function(){
+				$('#p-find-results').toggle();
+				return false;
+			});
+
+			$('#menu dt').hover(function(){
+				$('#menu dt').removeClass('bee');
+				$('#menu dd').hide();
+				$(this).addClass('bee');
+				$(this).next().show();
+			}, function(){
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<a href="#"><img src="static/img/logo.png" alt="Билайн Кафе" id="logo" /></a>
+		
+		<div id="menu">
+			<dl>
+				<dt class="bee" style="padding-right: 40px;">Моё</dt>
+				<dd style="display: block;"><a href="#">Моя страница</a> | <a href="#">Анкета</a> | <a href="#">Портрет</a> | <a href="#">Фото и видео</a> | <a href="#">Блог</a> | <a href="#">Стена</a></dd>
+
+				<dt>Друзья</dt>
+				<dd><a href="#">Настоящие</a> | <a href="#">Так себе</a> | <a href="#">Лицемерные негодяи</a></dd>
+
+				<dt>Сообщения</dt>
+				<dd><a href="#">Входяшие</a> | <a href="#">Исходящие</a> | <a href="#">Черновики</a> | <a href="#">Корзина</a></dd>
+
+				<dt>События</dt>
+				<dd><a href="#">Вечеринки</a> | <a href="#">Концерты</a> | <a href="#">Кино</a> | <a href="#">Театр</a> | <a href="#">Выставки</a> | <a href="#">Open Air</a></dd>
+
+				<dt>Настройки</dt>
+				<dd><a href="#">Цвет</a> | <a href="#">Форма</a> | <a href="#">Другое</a></dd>
+			</dl>
+			<p class="flr"><span class="bee">рус</span> | <a href="#">укр</a></p>
+			<p class="flr">Приветствуем, <a href="#">Nata</a> | <a href="#">Выход</a></p>
+		</div>
+		<div class="clear">&nbsp;</div>
+
+	</div>
+
+	<div class="wrapper">
+
+		<!-- Left Column  -->
+		<div id="x-left">
+			<div class="top">
+				<p class="more">
+					<strong class="bee">Banda</strong><br />
+					<strong>Таня Степенко</strong><br />
+					<img src="data/ava1.jpg" alt="" />
+				</p>
+
+				<p class="more"><a href="#">укажите ваш статус</a></p>
+
+				<p>
+					Возраст: 24 года<br />
+					Расположение: Украина, Киев<br />
+					Телефон: SonyErricsson 580w<br />
+					Пол: жен<br />
+					Рост см: 170<br />
+					Вес кг: 55<br />
+					Семейное положение: <strong>замужем</strong>
+				</p>
+				<p class="more" style="margin-bottom: 0;">
+					<a href="#">Изменить профиль</a><br />
+					<a href="#">Детальнее</a>
+				</p>
+			</div>
+
+			<div>
+				<div class="palette" id="p-portrait">
+					<h2 class="grey"><a href="#">Мой портрет</a></h2>
+					<p>
+						общительность
+						<span class="rail"><img src="static/img/x.png" width="30" /></span>
+						<span class="unit">20%</span>
+					</p>
+					<p>
+						неуверенность
+						<span class="rail"><img src="static/img/x.png" width="146" /></span>
+						<span class="unit">100%</span>
+					</p>
+					<p>
+						уверенность
+						<span class="rail"><img src="static/img/x.png" width="100" /></span>
+						<span class="unit">65%</span>
+					</p>
+					<p>
+						открытость
+						<span class="rail"><img src="static/img/x.png" width="70" /></span>
+						<span class="unit">46%</span>
+					</p>
+					<p>
+						сексуальность
+						<span class="rail"><img src="static/img/x.png" width="130" /></span>
+						<span class="unit">90%</span>
+					</p>
+
+					<p class="more" style=" text-align: left;"><a href="#">Больше</a></p>
+
+				</div>
+	
+				<div class="palette" id="p-media">
+					<h2 class="grey"><a href="#">Мои фото и видео</a> (10)</h2>
+					<p>
+						<a href="#" class="invert"><img src="data/foto.1.jpg" alt="" /></a>
+						<a href="#" class="invert">Как ловят НЛО</a>
+					</p>
+					<p>
+						<a href="#" class="invert"><img src="data/foto.2.jpg" alt="" /></a>
+						<a href="#" class="invert">Ибица форевер</a>
+					</p>
+
+					<p class="more"><a href="#">Все альбомы</a></p>
+
+				</div>
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+
+
+		<!-- Center Column  -->
+		<div id="x-center">
+			<div class="top">
+				<a href="#">Banda</a> &gt; <strong>Моя страница</strong>
+			</div>
+
+			<div>
+
+
+
+
+
+
+
+
+
+
+			<div class="b-content">
+				<h2 class="yellow-title"><a href="#">Мой Блог</a> (5)</h2>
+					<div class="for-editor">
+						<div class="heading-pl">
+							<h1>Тени забытых городов.</h1>
+							<div class="dt">28.05.2009  14:24:20</div>
+						</div>
+						<div class="cont-pl">
+							<img alt="" src="data/foto.1.jpg" class="img-left" />
+							<p>Среди городов Древнего Востока Вавилон был, пожалуй, самым почитаемым. Само название города — Баб-Илу (Ворота Бога) — говорило о его святости, об особом покровительстве богов. Верховному вавилонскому богу Мардуку поклонялись многие народы, даже не подвластные Вавилону, его храмы и жрецы получали</p>
+							<p>Вавилон не был одним из древнейших городов Междуречья — шумерские города Ур, Урук, Эриду и другие были примерно на тысячу лет старше.</p>
+							<p>Почти на два тысячелетия Вавилон был одним из крупнейших центров древней цивилизации. Он возник в результате ряда политических изменений в Месопотамии. Под ударами скотоводов-амореев пало централизованное государство — царство Шумера и Аккада, созданное III династией Ура. Не преминули воспользоваться легкой добычей и эламиты, обрушившиеся на Южную Месопотамию. Так, на территории Двуречья возникло множество мелких и средних , царств, около двухсот лет воевавших друг с другом.</p>
+							<p>Почти во всех государствах Двуречья утвердились аморейские династии, основателями которых стали вожди племен завоевателей. С течением времени пришельцы ассимилировались с местным населением.</p>
+							<div class="small-tags">
+								<strong>Метки публикации:</strong> <a href="#">Вавилон</a>, <a href="#">Баб-Илу</a>, <a href="#">царство</a>
+							</div>
+						</div>
+					</div>
+					<div class="send-message cont-pl">
+						<p class="smes-tls"><a href="#">Редактировать</a> <a href="#">Удалить</a> <strong class="o">Оставить комментарий</strong></p>
+						<div><textarea name="ds" rows="10" cols="30" style="width:458px"></textarea></div>
+						<a href="#">Оставить комментарий</a>
+					</div>
+				<h2 class="small-com">Комментарии</h2>
+				<ul class="clear-li list-comments list-smallcomments">
+					<li>
+						<img src="data/event.jpg" alt="" width="38" height="42" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big>banda</big>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li><a href="#">Удалить</a></li>
+								<li><a href="#">Редактировать</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="zb">
+						<img src="data/event.jpg" alt="" width="38" height="42" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big>banda</big>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li><a href="#">Удалить</a></li>
+								<li><a href="#">Редактировать</a></li>
+							</ul>
+						</div>
+					</li>
+					
+				</ul>
+				
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="b-content">
+				<h2 class="yellow-title"><a href="#">Отосланные приглашения</a> (12)</h2>
+				<ul class="cfix search-people">
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+				</ul>
+				<p class="more more-events"><a href="#">Показать все</a></p><br />
+				<div class="cfix">
+
+				<h2 class="yellow-title"><a href="#">Полученные приглашения</a> (8)</h2>
+				<ul class="cfix search-people">
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+							<p class="people-modify"><a href="#">Отклонить</a><br />
+							<a href="#">Добавить в друзья</a></p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+							<p class="people-modify"><a href="#">Отклонить</a><br />
+							<a href="#">Добавить в друзья</a></p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+							<p class="people-modify"><a href="#">Отклонить</a><br />
+							<a href="#">Добавить в друзья</a></p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+							<p class="people-modify"><a href="#">Отклонить</a><br />
+							<a href="#">Добавить в друзья</a></p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+							<p class="people-modify"><a href="#">Отклонить</a><br />
+							<a href="#">Добавить в друзья</a></p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+							<p class="people-modify"><a href="#">Отклонить</a><br />
+							<a href="#">Добавить в друзья</a></p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+							<p class="people-modify"><a href="#">Отклонить</a><br />
+							<a href="#">Добавить в друзья</a></p>
+						</div>
+					</li>
+				</ul>
+				<p class="more more-events"><a href="#">Показать все</a></p>
+
+				<div class="cfix">
+
+</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="b-content">
+				<h2 class="yellow-title"><small><a href="#">Написать</a></small> Моя стена (15)</h2>
+				<div class="send-message">
+					<div><textarea name="ds" rows="10" cols="30"></textarea></div>
+					<a href="#">Оставить комментарий</a>
+				</div>
+				<ul class="clear-li list-comments">
+					<li>
+						<img src="data/event.jpg" alt="" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big><a href="#">Nata</a></big> <a href="#">Киев</a>&nbsp; 25 лет &nbsp; <a href="#">замужем</a>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li class="ico-del"><a href="#"><i class="ico"></i>Убрать</a></li>
+								<li class="ico-wall"><a href="#"><i class="ico"></i>Написать у него на стене</a></li>
+								<li class="ico-answer"><a href="#"><i class="ico"></i>Ответить</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="zb">
+						<img src="data/event.jpg" alt="" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big><a href="#">Nata</a></big> <a href="#">Киев</a>&nbsp; 25 лет &nbsp; <a href="#">замужем</a>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li class="ico-del"><a href="#"><i class="ico"></i>Убрать</a></li>
+								<li class="ico-wall"><a href="#"><i class="ico"></i>Написать у него на стене</a></li>
+								<li class="ico-answer"><a href="#"><i class="ico"></i>Ответить</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<img src="data/event.jpg" alt="" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big><a href="#">Nata</a></big> <a href="#">Киев</a>&nbsp; 25 лет &nbsp; <a href="#">замужем</a>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li class="ico-del"><a href="#"><i class="ico"></i>Убрать</a></li>
+								<li class="ico-wall"><a href="#"><i class="ico"></i>Написать у него на стене</a></li>
+								<li class="ico-answer"><a href="#"><i class="ico"></i>Ответить</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="zb">
+						<img src="data/event.jpg" alt="" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big><a href="#">Nata</a></big> <a href="#">Киев</a>&nbsp; 25 лет &nbsp; <a href="#">замужем</a>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li class="ico-del"><a href="#"><i class="ico"></i>Убрать</a></li>
+								<li class="ico-wall"><a href="#"><i class="ico"></i>Написать у него на стене</a></li>
+								<li class="ico-answer"><a href="#"><i class="ico"></i>Ответить</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<img src="data/event.jpg" alt="" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big><a href="#">Nata</a></big> <a href="#">Киев</a>&nbsp; 25 лет &nbsp; <a href="#">замужем</a>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li class="ico-del"><a href="#"><i class="ico"></i>Убрать</a></li>
+								<li class="ico-wall"><a href="#"><i class="ico"></i>Написать у него на стене</a></li>
+								<li class="ico-answer"><a href="#"><i class="ico"></i>Ответить</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="zb">
+						<img src="data/event.jpg" alt="" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big><a href="#">Nata</a></big> <a href="#">Киев</a>&nbsp; 25 лет &nbsp; <a href="#">замужем</a>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li class="ico-del"><a href="#"><i class="ico"></i>Убрать</a></li>
+								<li class="ico-wall"><a href="#"><i class="ico"></i>Написать у него на стене</a></li>
+								<li class="ico-answer"><a href="#"><i class="ico"></i>Ответить</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div class="cfix">
+					
+					<div class="jumper">
+						<input type="text" maxlength="3" /> <a href="#">Перейти</a>
+					</div>
+					<div class="pager">
+						<a href="#"><img src="img/ico.farrow.prev.png" /></a>&ensp;<a href="#">назад</a>&emsp;
+						<a href="#" class="page">1</a>
+						<a href="#" class="page">2</a>
+						<span class="page">3</span>
+						<a href="#" class="page">4</a>
+						<span>...</span>
+						<a href="#" class="page">8</a>
+						&emsp;<a href="#">вперед</a>&ensp;<a href="#"><img src="img/ico.farrow.next.png" /></a>
+					</div>
+
+				</div>
+				<div class="vis-wall"></div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+			<div class="b-content">
+				<table class="b-hor-tabs">
+					<tr>
+						<td class="active">Общее</td>
+						<td><a href="#">Социальное</a></td>
+						<td><a href="#">Профессиональное</a></td>
+						<td class="lst"><a href="#">Личное</a></td>
+					</tr>
+				</table>
+				<div class="b-reg-form">
+					<p>Поля, отмеченные <span class="star">*</span> , обязательны для заполнения</p>
+					<div class="b-forms m-profile-form">
+						<div class="inputs">
+							<div class="lbl">Имя<span class="star">*</span></div>
+							<div class="i-view">
+								<input type="text" name="ds" value="" class="i-p" />
+								<div class="view-on">
+									<span>показать</span>
+									<select name="as" style="width:71px">
+										<option value="ds">друзьям</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Фамилия<span class="star">*</span></div>
+							<div class="i-view">
+								<input type="text" name="ds" value="" class="i-p" />
+								<div class="view-on">
+									<span>показать</span>
+									<select name="as" style="width:71px">
+										<option value="ds">друзьям</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Пол<span class="star">*</span></div>
+							<div class="i-view">
+								<select name="as" style="width:74px">
+									<option value="ds">мужской</option>
+								</select>
+								<div class="view-on">
+									<span>показать</span>
+									<select name="as" style="width:71px">
+										<option value="ds">друзьям</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Семейное положение</div>
+							<div class="i-view">
+								<select name="as" style="width:132px">
+									<option value="ds">Не состою в браке</option>
+								</select>
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Дата рождения</div>
+							<div class="i-view">
+								<select name="as" style="width:38px">
+									<option value="ds">08</option>
+								</select>
+								<select name="as" style="width:87px">
+									<option value="ds">сентябрь</option>
+								</select>
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Год рождения</div>
+							<div class="i-view">
+								<select name="as" style="width:73px">
+									<option value="ds">1908</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="inputs">
+							<div class="lbl">Город</div>
+							<div class="i-view">
+								<select name="as" style="width:132px">
+									<option value="ds">г. Киев</option>
+								</select>
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Регион</div>
+							<div class="i-view">
+								<select name="as" style="width:132px">
+									<option value="ds">Киевская обл.</option>
+								</select>
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Языки, на которых я говорю</div>
+							<div class="i-view">
+								<select name="as" style="width:172px">
+									<option value="ds">Киев</option>
+								</select>
+								<div class="sp"></div>
+								<a href="#">Добавить другой язык</a>
+								<div class="sp"></div>
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Средняя школа</div>
+							<div class="i-view">
+								<input type="text" name="ds" value="" class="i-p" />
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Училище/университет</div>
+							<div class="i-view">
+								<input type="text" name="ds" value="" class="i-p" />
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Компания/организация</div>
+							<div class="i-view">
+								<input type="text" name="ds" value="" class="i-p" />
+							</div>
+						</div>
+						<div class="btn">
+							<input type="image" src="img/btn-save.png" alt="Сохранить" name="fd" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+			<div class="b-content">
+				<h2 class="yellow-title"><a href="#">Мои друзья</a> (44)</h2>
+				<ul class="cfix search-people">
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+				</ul>
+				<div class="cfix">
+					
+					<div class="jumper">
+						<input type="text" maxlength="3" /> <a href="#">Перейти</a>
+					</div>
+					<div class="pager">
+						<a href="#"><img src="img/ico.farrow.prev.png" /></a>&ensp;<a href="#">назад</a>&emsp;
+						<a href="#" class="page">1</a>
+						<a href="#" class="page">2</a>
+						<span class="page">3</span>
+						<a href="#" class="page">4</a>
+						<span>...</span>
+						<a href="#" class="page">8</a>
+						&emsp;<a href="#">вперед</a>&ensp;<a href="#"><img src="img/ico.farrow.next.png" /></a>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+
+
+			<div class="b-content">
+				<h2 class="o-title">ПОЗНАКОМИТЬСЯ</h2>
+				<div class="b-forms m-extend-form">
+					<div class="extend-form-row cfix">
+						<div class="lbl">Пол</div>
+						<select name="ds">
+							<option value="ds">женский</option>
+						</select>
+						<div class="lbl-t">В возрасте от</div>
+						<input type="text" name="ds" class="i-p" />
+						<div class="lbl-t">до</div>
+						<input type="text" name="ds" class="i-p" />
+					</div>
+					<div class="inputs">
+						<div class="lbl">
+							Город
+						</div>
+						<div class="i-view">
+							<select name="sd">
+								<option value="sd">не имеет значения</option>
+							</select>
+						</div>
+					</div>
+					<div class="inputs">
+						<div class="lbl">
+							Фото 
+						</div>
+						<div class="i-view">
+							<ul class="chk-line">
+								<li>
+									<label>
+										<input type="radio" name="ds" value="" class="f-cb" />
+										да
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="ds" value="" class="f-cb" />
+										нет
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="inputs">
+						<div class="lbl">
+							Рост
+						</div>
+						<div class="i-view">
+							<div class="lbl-t">от</div>
+							<input type="text" name="ds" class="i-p i-height" />
+							<div class="lbl-t">до</div>
+							<input type="text" name="ds" class="i-p i-height" />
+						</div>
+					</div>
+					<div class="inputs">
+						<div class="lbl">
+							Имя 
+						</div>
+						<div class="i-view">
+							<input type="text" name="ds" class="i-p" />
+						</div>
+					</div>
+					<div class="inputs">
+						<div class="lbl">
+							Ник 
+						</div>
+						<div class="i-view">
+							<input type="text" name="ds" class="i-p" />
+						</div>
+					</div>
+					<div class="inputs">
+						<div class="lbl">
+							Знак зодиака 
+						</div>
+						<div class="i-view">
+							<select name="sd">
+								<option value="sd">не имеет значения</option>
+							</select>
+						</div>
+					</div>
+					<div class="inputs">
+						<div class="lbl">
+							Семейное положение 
+						</div>
+						<div class="i-view">
+							<select name="sd">
+								<option value="sd">не замужем</option>
+							</select>
+						</div>
+					</div>
+					<div class="inputs">
+						<div class="lbl">
+							Курение 
+						</div>
+						<div class="i-view">
+							<select name="sd">
+								<option value="sd">не имеет значения</option>
+							</select>
+						</div>
+					</div>
+					<div class="inputs">
+						<div class="lbl">
+							Юмор 
+						</div>
+						<div class="i-view">
+							<select name="sd">
+								<option value="sd">не имеет значения</option>
+							</select>
+						</div>
+					</div>
+					<div class="inputs">
+						<div class="lbl">
+							Стиль одежды
+						</div>
+						<div class="i-view">
+							<select name="sd">
+								<option value="sd">не имеет значения</option>
+							</select>
+						</div>
+					</div>
+					<div class="inputs">
+						<div class="lbl">
+							Дети 
+						</div>
+						<div class="i-view">
+							<select name="sd">
+								<option value="sd">не имеет значения</option>
+							</select>
+						</div>
+					</div>
+					<div class="inputs">
+						<div class="lbl">
+							Ищу 
+						</div>
+						<div class="i-view">
+							<select name="sd">
+								<option value="sd">не имеет значения</option>
+							</select>
+						</div>
+					</div>
+					<div class="inputs">
+						<div class="lbl">
+							Сортировать
+						</div>
+						<div class="i-view">
+							<select name="sd">
+								<option value="sd">по дате регистрации</option>
+							</select>
+						</div>
+					</div>
+					<div class="btn">
+						<input type="image" src="img/btn-search.png" alt="Найти" name="ds" /><br />
+						<a href="#">короткий поиск</a>
+					</div>
+				</div>
+				<!--  -->
+				<h3 class="gray-title"><a href="#">Результаты поиска</a></h3>
+				<ul class="cfix search-people">
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+				</ul>
+				<div class="cfix">
+					
+					<div class="jumper">
+						<input type="text" maxlength="3" /> <a href="#">Перейти</a>
+					</div>
+					<div class="pager">
+						<a href="#"><img src="img/ico.farrow.prev.png" /></a>&ensp;<a href="#">назад</a>&emsp;
+						<a href="#" class="page">1</a>
+						<a href="#" class="page">2</a>
+						<span class="page">3</span>
+						<a href="#" class="page">4</a>
+						<span>...</span>
+						<a href="#" class="page">8</a>
+						&emsp;<a href="#">вперед</a>&ensp;<a href="#"><img src="img/ico.farrow.next.png" /></a>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+		<!-- Center Column  -->
+		<div id="x-center">
+			<div class="top b-simple-b">
+				<div class="for-editor">
+					<h1>Как стать лидером кафе?</h1>
+					<p>Стать популярным так просто!<br />
+					Отправляйте SMS-сообщение на номер 2323 и становитесь новым лидером кафе!<br />
+					Отправив на одно SMS-сообщение больше, чем у текущего лидера ваша фотография со ссылкой на блог автоматически размещается на всех страницах портала.</p>
+					<p>Если вы хотите проголосовать за своего друга, отправте SMS с его никнеймом на номер 2323.<br />
+					Вы лидер, пока у вас на счету максимальное количество сообщений.<br />
+					Каждые 5 минут у лидера списывается по одному сообщению.</p>
+				</div>
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+
+
+
+
+
+
+			<div class="b-content">
+				<h2 class="o-title">ПОЗНАКОМИТЬСЯ</h2>
+				<div class="b-forms m-extend-form">
+					<div class="extend-form-row cfix">
+						<div class="lbl">Пол</div>
+						<select name="ds">
+							<option value="ds">женский</option>
+						</select>
+						<div class="lbl-t">В возрасте от</div>
+						<input type="text" name="ds" class="i-p" />
+						<div class="lbl-t">до</div>
+						<input type="text" name="ds" class="i-p" />
+					</div>
+					<div class="extend-form-row cfix">
+						<div class="lbl" style="padding-right:6px">
+							Город
+						</div>
+						<select name="sd" style="width:188px">
+							<option value="sd">не имеет значения</option>
+						</select>
+					</div>
+					<div class="btn">
+						<input type="image" src="img/btn-search.png" alt="Найти" name="ds" /><br />
+						<a href="#">расширенный поиск</a>
+					</div>
+				</div>
+				<!--  -->
+				<h3 class="gray-title"><a href="#">Результаты поиска</a></h3>
+				<ul class="cfix search-people">
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+				</ul>
+				<div class="cfix">
+					
+					<div class="jumper">
+						<input type="text" maxlength="3" /> <a href="#">Перейти</a>
+					</div>
+					<div class="pager">
+						<a href="#"><img src="img/ico.farrow.prev.png" /></a>&ensp;<a href="#">назад</a>&emsp;
+						<a href="#" class="page">1</a>
+						<a href="#" class="page">2</a>
+						<span class="page">3</span>
+						<a href="#" class="page">4</a>
+						<span>...</span>
+						<a href="#" class="page">8</a>
+						&emsp;<a href="#">вперед</a>&ensp;<a href="#"><img src="img/ico.farrow.next.png" /></a>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+			<div class="b-content">
+				<h2 class="yellow-title"><a href="#">Отправленные сообщения</a> (112)</h2>
+				<div class="b-reg-form form-choose-mes">
+					<div class="inputs">
+						<div class="lbl">Выбрать сообщения</div>
+						<div class="i-view">
+							<select name="as" style="width:117px">
+								<option value="ds">Nata</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<ul class="clear-li list-comments list-messages">
+					<li>
+						<img src="data/event.jpg" alt="" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big><a href="#">Nata</a></big> <a href="#">Киев</a>&nbsp; 25 лет &nbsp; <a href="#">замужем</a>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li class="ico-del"><a href="#"><i class="ico"></i>Убрать</a></li>
+								<li class="ico-answer"><a href="#"><i class="ico"></i>Ответить</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="zb">
+						<img src="data/event.jpg" alt="" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big><a href="#">Nata</a></big> <a href="#">Киев</a>&nbsp; 25 лет &nbsp; <a href="#">замужем</a>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li class="ico-del"><a href="#"><i class="ico"></i>Убрать</a></li>
+								<li class="ico-answer"><a href="#"><i class="ico"></i>Ответить</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<img src="data/event.jpg" alt="" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big><a href="#">Nata</a></big> <a href="#">Киев</a>&nbsp; 25 лет &nbsp; <a href="#">замужем</a>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li class="ico-del"><a href="#"><i class="ico"></i>Убрать</a></li>
+								<li class="ico-answer"><a href="#"><i class="ico"></i>Ответить</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="zb">
+						<img src="data/event.jpg" alt="" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big><a href="#">Nata</a></big> <a href="#">Киев</a>&nbsp; 25 лет &nbsp; <a href="#">замужем</a>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li class="ico-del"><a href="#"><i class="ico"></i>Убрать</a></li>
+								<li class="ico-answer"><a href="#"><i class="ico"></i>Ответить</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<img src="data/event.jpg" alt="" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big><a href="#">Nata</a></big> <a href="#">Киев</a>&nbsp; 25 лет &nbsp; <a href="#">замужем</a>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li class="ico-del"><a href="#"><i class="ico"></i>Убрать</a></li>
+								<li class="ico-answer"><a href="#"><i class="ico"></i>Ответить</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="zb">
+						<img src="data/event.jpg" alt="" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big><a href="#">Nata</a></big> <a href="#">Киев</a>&nbsp; 25 лет &nbsp; <a href="#">замужем</a>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li class="ico-del"><a href="#"><i class="ico"></i>Убрать</a></li>
+								<li class="ico-answer"><a href="#"><i class="ico"></i>Ответить</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div class="cfix">
+
+					<div class="jumper">
+						<input type="text" maxlength="3" /> <a href="#">Перейти</a>
+					</div>
+					<div class="pager">
+						<a href="#"><img src="img/ico.farrow.prev.png" /></a>&ensp;<a href="#">назад</a>&emsp;
+						<a href="#" class="page">1</a>
+						<a href="#" class="page">2</a>
+						<span class="page">3</span>
+						<a href="#" class="page">4</a>
+						<span>...</span>
+						<a href="#" class="page">8</a>
+						&emsp;<a href="#">вперед</a>&ensp;<a href="#"><img src="img/ico.farrow.next.png" /></a>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<div class="palette" id="p-find">
+					<h2 class="yellow"><a href="#">Найти друзей</a> (15)</h2>
+					<form method="post" action="#">
+						<p class="big">
+							<label for="gender" class="w2">Ищу</label>
+							<select name="gender">
+								<option value="male">мальчика</option>
+								<option value="female">девочку</option>
+								<option value="null">мне всё равно</option>
+							</select>
+							в возрасте <label for="age_from">от</label> <input type="text" class="w1" name="age_from" maxlength="2" /> <label for="age_till">до</label> <input type="text" class="w1" name="age_till" maxlength="2" /><br />
+						</p>
+						
+						<p class="big">
+							<label for="city" class="w2">Город</label>
+							<select name="city">
+								<option value="1">Киев</option>
+								<option value="2">Одесса</option>
+								<option value="3">Львов</option>
+								<option value="4">Севастополь</option>
+								<option value="5">Тернополь</option>
+							</select>
+						</p>
+						<p>
+							<a href="#">расширенный поиск</a>
+						</p>
+						<p>
+							<button type="submit" class="button1">Найти</button>
+						</p>
+					</form>
+
+				</div>
+
+				<div class="palette" id="p-find-results">
+					<h2><a href="#">Результаты поиска</a> (15)</h2>
+
+					<div>
+						<img src="data/ava.medium.1.jpg" /><br />
+						<a href="#">Nata Mazur</a>
+					</div>
+					<div>
+						<img src="data/ava.medium.2.jpg" /><br />
+						<a href="#">Джонни Депп Джонни Депп</a>
+					</div>
+					<div>
+						<img src="data/ava.medium.3.jpg" /><br />
+						<a href="#">Ани Лорак</a>
+					</div>
+					<div>
+						<img src="data/ava.medium.4.jpg" /><br />
+						<a href="#">Макс Леонов</a>
+					</div>
+					<div>
+						<img src="data/ava.medium.1.jpg" /><br />
+						<a href="#">Сергей Иванов</a>
+					</div>
+
+					<p class="more"><a href="#">Все результаты</a></p>
+
+				</div>
+
+				<div class="palette" id="p-wall">
+					<h2 class="yellow"><a href="#">Стена</a> (10)</h2>
+					<div>
+						<img src="data/ava2.jpg" class="ava" />
+						<h5><a href="#" class="big">Тема поста</a> <span><span><a href="#" class="invert">Киев</a></span><span>25 лет</span><span><a href="#" class="invert">замужем</a></span></span></h5>
+						<h6>25.05.09 в 23:20 написал:</h6>
+						<p>
+							Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і дзвоніть безкоштовно всім абонентам Beeline!
+						</p>
+						<p class="tools"><a href="#" class="reply">Ответить</a> <a href="#" class="post">Написать у него на стене</a> <a href="#" class="delete">Убрать</a></p>
+					</div>
+	
+					<div class="odd">
+						<img src="data/ava3.jpg" class="ava" />
+						<h5><a href="#" class="big">Тема поста</a></h5>
+						<h6>25.05.09 в 23:20 написал:</h6>
+						<p>
+							Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і дзвоніть безкоштовно всім абонентам Beeline!
+						</p>
+						<p class="tools"><a href="#" class="reply">Ответить</a> <a href="#" class="post">Написать у него на стене</a> <a href="#" class="delete">Убрать</a></p>
+					</div>
+
+					<div>
+						<img src="data/ava1.jpg" class="ava" />
+						<h5><a href="#" class="big">Тема поста</a></h5>
+						<h6>25.05.09 в 23:20 написал:</h6>
+						<p>
+							Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і дзвоніть безкоштовно всім абонентам Beeline!
+						</p>
+						<p class="tools"><a href="#" class="reply">Ответить</a> <a href="#" class="post">Написать у него на стене</a> <a href="#" class="delete">Убрать</a></p>
+					</div>
+	
+					<p class="more"><a href="#">Все записи</a></p>
+
+				</div>
+
+				<div class="palette" id="p-blog">
+					<h2 class="grey"><a href="#">Мой блог</a> (5)</h2>
+	
+					<div>
+						<h5><a href="#" class="big">Тема поста</a></h5>
+						<h6>25.05.09</h6>
+						<p>
+							Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і дзвоніть безкоштовно всім абонентам Beeline!
+						</p>
+						<p class="alr"><a href="#">Детальнее</a></p>
+					</div>
+	
+					<div class="odd">
+						<h5><a href="#" class="big">Тема поста</a></h5>
+						<h6>25.05.09</h6>
+						<p>
+							Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і дзвоніть безкоштовно всім абонентам Beeline!
+						</p>
+						<p class="alr"><a href="#">Детальнее</a></p>
+					</div>
+	
+					<p class="more"><a href="#">Все записи</a></p>
+
+				</div>
+
+
+				<div class="palette" id="p-blogext">
+					<h2 class="yellow">Мой блог</h2>
+
+					<div>
+						<h5><a href="#" class="big">Тема поста</a></h5>
+						<h6>25.05.09</h6>
+						<p>
+							Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і дзвоніть безкоштовно всім абонентам Beeline!
+						</p>
+
+						<p class="alr">
+							Метки: <a href="#">indie</a>, <a href="#">pop</a>, <a href="#">funk</a><br />
+							<a href="#">Редактировать</a>&emsp;&emsp;<a href="#">Комментариев (17)</a>						
+						</p>
+						<span class="clear"> </span>
+					</div>
+	
+					<div class="odd">
+						<h5><a href="#" class="big">Тема поста</a></h5>
+						<h6>25.05.09</h6>
+						<p>
+							<img src="data/ava1.jpg" />Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і дзвоніть безкоштовно всім абонентам Beeline!
+						</p>
+
+						<p class="alr">
+							Метки: <a href="#">indie</a>, <a href="#">pop</a>, <a href="#">funk</a><br />
+							<a href="#">Редактировать</a>&emsp;&emsp;<a href="#">Комментариев (17)</a>						
+						</p>
+						<span class="clear"> </span>
+					</div>
+
+					<div>
+						<h5><a href="#" class="big">Тема поста</a></h5>
+						<h6>25.05.09</h6>
+						<p>
+							Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і дзвоніть безкоштовно всім абонентам Beeline!
+						</p>
+
+						<p class="alr">
+							Метки: <a href="#">indie</a>, <a href="#">pop</a>, <a href="#">funk</a><br />
+							<a href="#">Редактировать</a>&emsp;&emsp;<a href="#">Комментариев (17)</a>						
+						</p>
+						<span class="clear"> </span>
+					</div>
+	
+					<div class="odd inactive">
+						<h5>Тема поста</h5>
+						<h6>25.05.09</h6>
+						<p>
+							Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і дзвоніть безкоштовно всім абонентам Beeline!
+						</p>
+
+						<p class="alr">
+							Метки: <a href="#">indie</a>, <a href="#">pop</a>, <a href="#">funk</a><br />
+							<a href="#">Дописать</a>
+						</p>
+						<span class="clear"> </span>
+					</div>
+	
+					<div class="pager">
+						<a href="#"><img src="static/img/ico.farrow.prev.png" /></a>&ensp;<a href="#">назад</a>&emsp;
+						<a href="#" class="page">1</a>
+						<a href="#" class="page">2</a>
+						<span class="page">3</span>
+						<a href="#" class="page">4</a>
+						<span>...</span>
+						<a href="#" class="page">8</a>
+						&emsp;<a href="#">вперед</a>&ensp;<a href="#"><img src="static/img/ico.farrow.next.png" /></a>
+					</div>
+					
+					<div class="jumper">
+						<input type="text" maxlength="3" /> <a href="#">Перейти</a>
+					</div>
+
+					<p class="clear"> </p>
+				</div>
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+
+
+		<!-- Right Column  -->
+		<div id="x-right">
+			<div class="top">
+				Количество он-лайн пользователей: <a href="#">34354</a>
+			</div>
+
+			<div>
+				<div class="palette" id="p-event">
+					<h2 class="grey"><a href="#">Ближайшее событие</a></h2>
+					<p>
+						<img src="data/event.jpg" alt="Терминатор 4" class="fll" />
+						<strong>"Терминатор 4"</strong><br />
+						Кинотеатр «<a href="#">Киев</a>», сеанс 21:30, 8 флаеров
+					</p>
+
+					<p class="more"><a href="#">Все мероприятия</a></p>
+				</div>
+
+				<div class="palette" id="p-leeder">
+					<h2 class="grey"><a href="#">Лидер CAFE</a></h2>
+					<p>
+						<img src="data/ava3.jpg" alt="" class="fll" />
+						<big><a href="#">Banda</a></big><br />
+						Возраст: 24 года<br />
+						Город: Киев<br />
+						Пол: жен
+					</p>
+
+					<p class="more"><a href="#">Стать лидером</a></p>
+				</div>
+
+				<div class="palette" id="p-friends">
+					<h2 class="yellow"><a href="#">Мои друзья</a> (10)</h2>
+					<table>
+						<tbody>
+							<tr>
+								<td><img src="data/ava.small.1.jpg" alt="" /></td>
+								<td>
+									<a href="#" class="name">Nata</a><br />
+									<a href="#">Написать</a>
+								</td>
+								<td class="icons"><a href="#"><img src="static/img/ico.mail.png" alt="" /></a> <a href="#">3</a></td>
+							</tr>
+							<tr class="odd">
+								<td><img src="data/ava.small.2.jpg" alt="" /></td>
+								<td>
+									<a href="#" class="name">Nata</a><br />
+									<a href="#">Написать</a>
+								</td>
+								<td class="icons"><a href="#"><img src="static/img/ico.mail.null.png" alt="" /></a> <a href="#">0</a></td>
+							</tr>
+							<tr>
+								<td><img src="data/ava.small.3.jpg" alt="" /></td>
+								<td>
+									<a href="#" class="name">Nata</a><br />
+									<a href="#">Написать</a>
+								</td>
+								<td class="icons"><a href="#"><img src="static/img/ico.mail.png" alt="" /></a> <a href="#">3</a></td>
+							</tr>
+							<tr class="odd">
+								<td><img src="data/ava.small.4.jpg" alt="" /></td>
+								<td>
+									<a href="#" class="name">Nata</a><br />
+									<a href="#">Написать</a>
+								</td>
+								<td class="icons"><a href="#"><img src="static/img/ico.mail.null.png" alt="" /></a> <a href="#">0</a></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p class="more"><a href="#">Все друзья</a></p>
+				</div>
+
+				<div class="palette" id="p-tags">
+					<h2 class="yellow">Метки</h2>
+					<p>
+						<a href="#" style="font-size: 1em;">finnish</a>
+						<a href="#" style="font-size: 1em;">folk</a>
+						<a href="#" style="font-size: 1.2em;">metal</a>
+						<a href="#" style="font-size: 1em;">fun</a>
+						<a href="#" style="font-size: 1em;">funk</a>
+						<a href="#" style="font-size: 1.4em;">german</a>
+						<a href="#" style="font-size: 1em;">food</a>
+						<a href="#" style="font-size: 1.3em;">grindcore</a>
+						<a href="#" style="font-size: 1em;">grunge</a>
+						<a href="#" style="font-size: 2.5em;">guitar</a>
+						<a href="#" style="font-size: 1em;">hard rock</a>
+						<a href="#" style="font-size: 1em;">hardcore</a>
+						<a href="#" style="font-size: 2em;">indie</a>
+						<a href="#" style="font-size: 1em;">hop</a>
+						<a href="#" style="font-size: 1.5em;">house</a>
+						<a href="#" style="font-size: 1em;">hiphop</a>
+						<a href="#" style="font-size: 1em;">j-rock</a>
+						<a href="#" style="font-size: 1em;">instrumental</a>
+						<a href="#" style="font-size: 1.3em;">j-pop</a>
+						<a href="#" style="font-size: 1em;">idm</a>
+					</p>
+				</div>
+	
+				<div class="palette" id="p-calendar">
+					<h2 class="yellow">Календарь записей</h2>
+					<div>
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<span>3</span>	
+						<span>4</span>
+						<span>5</span>
+
+						<span>6</span>
+						<span>7</span>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<span>10</span>	
+						<span>11</span>
+						<span>12</span>
+
+						<span>13</span>
+						<span>14</span>
+						<a href="#">15</a>
+						<a href="#">16</a>
+						<span>17</span>	
+						<span>18</span>
+						<span>19</span>
+
+						<span>20</span>
+						<span>21</span>
+						<a href="#">22</a>
+						<a href="#">23</a>
+						<span>24</span>	
+						<span>25</span>
+						<span>26</span>
+
+						<span>27</span>
+						<span>28</span>
+						<a href="#">29</a>
+						<a href="#">30</a>
+						<span>31</span>
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+						
+						<div class="clear"> </div>
+					</div>
+
+					<p class="alc">
+						<a href="#" title="Июль 2009"><img src="static/img/ico.farrow.prev.png" /></a>&emsp;
+						<strong class="bee">Август 2009</strong>
+						&emsp;<a href="#" title="Сентябрь 2009"><img src="static/img/ico.farrow.next.png" /></a>
+					</p>
+				</div>
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+		
+		<div class="clear">&nbsp;</div>
+
+	</div>
+
+	<div class="wrapper" id="footer">
+		<a href="#">Правила</a> | <a href="#">Помощь</a> | <a href="#">О портале</a> | <a href="#">Мобильная версия</a> | <a href="#">Отправка SMS</a><br />
+		<a href="#">Своя мелодия</a> | <a href="#">MP3</a> | <a href="#">Полифония</a> | <a href="#">Игры</a> | <a href="#">Картинки и анимация</a> | <a href="#">RBT</a> | <a href="#">Java-игры</a> | <a href="#">Видео</a> | <a href="#">Темы</a> 
+	</div>
+
+</body>
+</html>
+
+

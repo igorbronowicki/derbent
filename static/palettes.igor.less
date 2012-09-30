@@ -1,0 +1,181 @@
+/*
+	#p-portrait
+*/
+#p-portrait {
+	p {
+		width: 150px;
+		text-align: center;
+		position: relative;
+		clear: both;
+
+		.rail {
+			height: 7px;
+			overflow: hidden;
+			background: #fff url("@{img-url}bg.rail.png") no-repeat;
+			display: block;
+			text-align: left;
+			line-height: 3px;
+
+			img {
+				height: 3px;
+				margin: 2px;
+				background: #febf05;
+			}
+		}
+		.unit {
+			font-size: 10px;
+			font-weight: bold;
+			position: absolute;
+			right: -43px;
+			top: 11px;
+		}
+	}
+	p.big {
+		text-align: left;
+	}
+}
+
+
+
+
+/*
+	#p-media
+*/
+#p-media {
+	img {
+		margin: 0 10px 0 0;
+	}
+}
+
+
+
+
+/*
+	#p-blogext
+*/
+#p-blogext {
+	div {
+		border-bottom: 1px solid #e4e4e4;
+		margin-top: 0;
+		padding: 10px;
+
+		p, h5 {
+			margin: 0;
+			padding: 0;
+		}
+
+		p {
+			img {
+				float: left;
+				margin: 0 10px 10px 0;
+			}
+
+			&.alr {
+				padding-top: 10px;
+			}
+		}
+
+		&.inactive {
+			p, h5, h6 {
+				color: #9a9a9a;
+			}
+		}
+	}
+
+	.pager {
+		text-align: center;
+		padding: 0;
+		margin: 20px 115px 0 15px;
+		border: none;
+
+		img {
+			vertical-align: middle;
+			margin: 0;
+		}
+
+		span, a.page {
+			padding: 3px 6px;
+		}
+
+		span.page {
+			background: #fec92c;
+			color: #000;
+		}
+
+		a.page {
+			background: #b8b2a8;
+			color: #fff;
+			text-decoration: none;
+
+			&.hover {
+				background: #fec92c;
+				color: #fff;
+			}
+		}
+	}
+
+	.jumper {
+		padding: 0;
+		line-height: 14px;
+		text-align: right;
+		margin-top: -16px;
+		border: none;
+		margin-bottom: -16px;
+
+		input {
+			width: 30px;
+			padding: 0;
+		}
+	}
+}
+
+
+
+
+/*
+	#p-wall
+*/
+#p-wall {
+	background: #fff url("@{img-url}bg.breaks.png") no-repeat bottom right;
+
+	div {
+		border-bottom: 1px solid #e4e4e4;
+		margin-top: 0;
+		padding: 10px;
+
+		img.ava {
+			float: left;
+			margin-right: -100%;
+		}
+
+		p, h5, h6 {
+			margin: 10px 0 10px 115px;
+		}
+
+		h5 {
+			margin-top: 0;
+
+			span {
+				font-weight: normal;
+				font-size:11px;
+				margin-left: 10px;
+			}
+		}
+
+		.tools {
+			text-align: right;
+			margin-bottom: 5px;
+
+			a {
+				padding: 1px 0 2px 20px;
+				margin-left: 10px;
+
+				.reply  { background: url("@{img-url}ico.post.reply.png") no-repeat; }
+				.post   { background: url("@{img-url}ico.post.post.png") no-repeat; }
+				.delete { background: url("@{img-url}ico.post.delete.png") no-repeat; }
+			}
+		}
+	}
+}
+
+

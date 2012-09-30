@@ -1,0 +1,21 @@
+div.txt-tb {width:auto; display:inline-block}
+
+/* ------------- //inputs design// ----------------- */
+.top, .gray-title, .b-stat-nolog, .b-forms, .b-simple-b, .inp {zoom:1}
+	.inp input, .inp textarea {float:left}
+/* ------------- //inputs design// ----------------- */
+
+/* ------------- //for li// -------------------- */
+.clear-li li {vertical-align:bottom}
+/* ------------- //for li// -------------------- */
+
+/* #nav a {cursor:hand} */
+
+.cfix, .clear-li li, .b-forms .inputs {zoom:1; display:block}
+.f-cb {left:-5px; top:-1px; margin-left:0}
+
+.jumper {position:relative; margin-top:-1px}
+.jumper input {
+	padding:1px 0 2px;
+	vertical-align:baseline
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Билайн-Кафе</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/palettes.css" media="all" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" /><![endif]-->
+<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="css/ie6.css" /><![endif]-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#p-find button').click(function(){
+				$('#p-find-results').toggle();
+				return false;
+			});
+
+			$('#menu dt').hover(function(){
+				$('#menu dt').removeClass('bee');
+				$('#menu dd').hide();
+				$(this).addClass('bee');
+				$(this).next().show();
+			}, function(){
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<a href="#"><img src="img/logo.png" alt="Билайн Кафе" id="logo" /></a>
+		
+		<div id="menu">
+			<p class="flr"><span class="bee">рус</span> | <a href="#">укр</a></p>
+			<p class="b-stat-nolog">Количество он-лайн пользователей:  мужского пола <a href="#">34354</a> &nbsp; женского пола <a href="#">23423</a></p>
+		</div>
+		<div class="clear">&nbsp;</div>
+
+	</div>
+
+	<div class="wrapper">
+
+		<!-- Left Column  -->
+		<div id="x-left">
+			<div class="top">
+				<dl class="card-user">
+					<dt>Banda</dt>
+					<dd>
+						Таня Степенко
+						<div class="ph">
+							<img src="data/ava1.jpg" alt="" />
+						</div>
+						<p class="big"><a href="#">укажите ваш статус</a></p>
+						<p>
+							Возраст: 24 года<br />
+							Расположение: Украина, <a href="#">Киев</a><br />
+							Телефон: SonyErricsson 580w<br />
+							Пол: <a href="#">жен</a><br />
+							Рост см: <a href="#">170</a><br />
+							Вес кг: <a href="#">55</a><br />
+							Семейное положение: <strong><a href="#">замужем</a></strong>
+						</p>
+						<p class="big">
+							<a href="#">Изменить профиль</a><br />
+							<a href="#">Детальнее</a>
+						</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="palette" id="p-portrait">
+				<h2 class="grey"><a href="#">Мой портрет</a></h2>
+				<p>
+					общительность
+					<span class="rail"><img src="img/x.png" width="30" /></span>
+					<span class="unit">20%</span>
+				</p>
+				<p>
+					неуверенность
+					<span class="rail"><img src="img/x.png" width="146" /></span>
+					<span class="unit">100%</span>
+				</p>
+				<p>
+					уверенность
+					<span class="rail"><img src="img/x.png" width="100" /></span>
+					<span class="unit">65%</span>
+				</p>
+				<p>
+					открытость
+					<span class="rail"><img src="img/x.png" width="70" /></span>
+					<span class="unit">46%</span>
+				</p>
+				<p>
+					сексуальность
+					<span class="rail"><img src="img/x.png" width="130" /></span>
+					<span class="unit">90%</span>
+				</p>
+
+				<p class="more" style=" text-align: left;"><a href="#">Больше</a></p>
+
+			</div>
+			
+			<div class="palette" id="p-media">
+				<h2 class="grey"><a href="#">Мои фото и видео</a> (10)</h2>
+				<p>
+					<a href="#" class="invert"><img src="data/foto.1.jpg" alt="" /></a>
+					<a href="#" class="invert">Как ловят НЛО</a>
+				</p>
+				<p>
+					<a href="#" class="invert"><img src="data/foto.2.jpg" alt="" /></a>
+					<a href="#" class="invert">Ибица форевер</a>
+				</p>
+
+				<p class="more"><a href="#">Все альбомы</a></p>
+
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+
+
+		<!-- Center Column  -->
+		<div id="x-center">
+			<div class="top">
+				<a href="#">Banda</a> &gt; <a href="#">Друзья</a> &gt; <strong>Поиск друзей</strong>
+			</div>
+			
+			<div class="b-content">
+				<h2 class="o-title">ПОЗНАКОМИТЬСЯ</h2>
+				<div class="b-forms m-extend-form">
+					<div class="extend-form-row cfix">
+						<div class="lbl">Пол</div>
+						<select name="ds">
+							<option value="ds">женский</option>
+						</select>
+						<div class="lbl-t">В возрасте от</div>
+						<input type="text" name="ds" class="i-p" />
+						<div class="lbl-t">до</div>
+						<input type="text" name="ds" class="i-p" />
+					</div>
+					<div class="extend-form-row cfix">
+						<div class="lbl" style="padding-right:6px">
+							Город
+						</div>
+						<select name="sd" style="width:188px">
+							<option value="sd">не имеет значения</option>
+						</select>
+					</div>
+					<div class="btn">
+						<input type="image" src="img/btn-search.png" alt="Найти" name="ds" /><br />
+						<a href="#">расширенный поиск</a>
+					</div>
+				</div>
+				<!--  -->
+				<h3 class="gray-title"><a href="#">Результаты поиска</a></h3>
+				<ul class="cfix search-people">
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+					<li>
+						<img src="data/ava3.jpg" width="100" height="96" alt="" class="img-cover" />
+						<div class="i-view">
+							<h4><a href="#">Banda</a></h4>
+							<p>Возраст: 24 года <br />
+							Город: Киев<br />
+							Пол: жен</p>
+						</div>
+					</li>
+				</ul>
+				<div class="cfix">
+					
+					<div class="jumper">
+						<input type="text" maxlength="3" /> <a href="#">Перейти</a>
+					</div>
+					<div class="pager">
+						<a href="#"><img src="img/ico.farrow.prev.png" /></a>&ensp;<a href="#">назад</a>&emsp;
+						<a href="#" class="page">1</a>
+						<a href="#" class="page">2</a>
+						<span class="page">3</span>
+						<a href="#" class="page">4</a>
+						<span>...</span>
+						<a href="#" class="page">8</a>
+						&emsp;<a href="#">вперед</a>&ensp;<a href="#"><img src="img/ico.farrow.next.png" /></a>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+
+
+		<!-- Right Column  -->
+		<!-- Right Column  -->
+		<div id="x-right">
+			<div class="top">
+				Количество он-лайн пользователей: <a href="#">34354</a>
+			</div>
+
+			<div>
+				<div class="palette" id="p-event">
+					<h2 class="grey"><a href="#">Ближайшее событие</a></h2>
+					<p>
+						<img src="data/event.jpg" alt="Терминатор 4" class="fll" />
+						<strong>"Терминатор 4"</strong><br />
+						Кинотеатр «<a href="#">Киев</a>», сеанс 21:30, 8 флаеров
+					</p>
+					<p class="big"><a href="#">Детальнее</a></p>
+
+					<p class="more"><a href="#">Все мероприятия</a></p>
+				</div>
+
+				<div class="palette" id="p-leeder">
+					<h2 class="grey"><a href="#">Лидер CAFE</a></h2>
+					<p>
+						<img src="data/ava3.jpg" alt="" class="fll" />
+						<big><a href="#">Banda</a></big><br />
+						Возраст: 24 года<br />
+						Город: Киев<br />
+						Пол: жен
+					</p>
+
+					<p class="more"><a href="#">Стать лидером</a></p>
+				</div>
+
+				<div class="palette" id="p-friends">
+					<h2 class="yellow"><a href="#">Мои друзья</a> (10)</h2>
+					<table>
+						<tbody>
+							<tr>
+								<td><img src="data/ava.small.1.jpg" alt="" /></td>
+								<td class="txt">
+									<a href="#" class="name">Nata</a><br />
+									<a href="#">Написать</a>
+								</td>
+							</tr>
+							<tr class="odd">
+								<td><img src="data/ava.small.2.jpg" alt="" /></td>
+								<td class="txt">
+									<a href="#" class="name">Nata</a><br />
+									<a href="#">Написать</a>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="data/ava.small.3.jpg" alt="" /></td>
+								<td class="txt">
+									<a href="#" class="name">Nata</a><br />
+									<a href="#">Написать</a>
+								</td>
+							</tr>
+							<tr class="odd">
+								<td><img src="data/ava.small.4.jpg" alt="" /></td>
+								<td class="txt">
+									<a href="#" class="name">Nata</a><br />
+									<a href="#">Написать</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p class="more"><a href="#">Все друзья</a></p>
+				</div>
+				
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+		
+		<div class="clear">&nbsp;</div>
+
+	</div>
+
+	<div class="wrapper" id="footer">
+		<a href="#">Правила</a> | <a href="#">Помощь</a> | <a href="#">О портале</a> | <a href="#">Мобильная версия</a> | <a href="#">Отправка SMS</a><br />
+		<a href="#">Своя мелодия</a> | <a href="#">MP3</a> | <a href="#">Полифония</a> | <a href="#">Игры</a> | <a href="#">Картинки и анимация</a> | <a href="#">RBT</a> | <a href="#">Java-игры</a> | <a href="#">Видео</a> | <a href="#">Темы</a> 
+	</div>
+
+</body>
+</html>
+
+

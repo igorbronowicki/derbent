@@ -1,0 +1,14 @@
+div.txt-tb {width:auto; display:inline-block}
+
+/* ------------- //inputs design// ----------------- */
+.b-stat-nolog, .b-forms, .b-simple-b, .inp {zoom:1}
+	.inp input, .inp textarea {float:left}
+/* ------------- //inputs design// ----------------- */
+
+/* ------------- //for li// -------------------- */
+.clear-li li {vertical-align:bottom}
+/* ------------- //for li// -------------------- */
+
+/* #nav a {cursor:hand} */
+
+.cfix, .clear-li li, .b-forms .inputs {zoom:1; display:block}

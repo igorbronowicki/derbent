@@ -1,0 +1,316 @@
+/*
+	Main Palette classes
+*/
+.palette {
+	margin: 0 4px;
+	clear: both;
+	background: #fff;
+	padding-bottom: 15px;
+}
+#x-left .palette, #x-right .palette {
+	background: #fff url(../img/bg.palette.png) no-repeat top right;
+}
+.palette h2 {
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 24px;
+	color: #000;
+	padding: 0 20px 0 15px;
+}
+.palette h2 a {
+	color: #000;
+}
+.palette h2.yellow, .palette h2.grey, .palette h2.yellow a, .palette h2.grey a {
+	color: #fff;
+	cursor: move;
+}
+.palette h2.yellow { background: #fec92c url(../img/ico.dnd.yellow.png) no-repeat top right; }
+.palette h2.grey   { background: #d0c8ba url(../img/ico.dnd.grey.png) no-repeat top right; }
+
+
+
+/* 
+	Main palette inners
+*/
+.palette p, .palette ul, .palette div, .palette table {
+	margin: 15px 2px 0 15px;
+}
+.palette p img {
+	margin: 0 10px 10px 0;
+	//margin-bottom: 0;
+}
+
+
+
+/*
+	List of palettes:
+	#p-portrait      - My Portrait          (side)
+	#p-media         - My photos & videos   (side)
+	#p-find          - Find friends         (center)
+	#p-find-results  - Find friends results (center)
+	#p_wall          - My Wall              (center)
+	#p-blog          - My Blog              (center)
+	#p-blogext       - My Blog  (extended)  (center)
+	#p-events        - Cafe Events          (side)
+	#p-leader        - Cafe leader          (side)
+	#p-friends       - My friends           (side)
+	#p-calendar      - Events Calendar      (side)
+	#p-tags          - Tags Cloud           (side)
+*/
+
+
+
+/*
+	#p-portrait
+*/
+#p-portrait p {
+	width: 150px;
+	text-align: center;
+	position: relative;
+	clear: both;
+}
+#p-portrait .rail {
+	height: 7px;
+	overflow: hidden;
+	background: #fff url(../img/bg.rail.png) no-repeat;
+	display: block;
+	text-align: left;
+	line-height: 3px;
+}
+#p-portrait .rail img {
+	height: 3px;
+	margin: 2px;
+	background: #febf05;
+}
+#p-portrait .unit {
+	font:10px Arial,Helvetica;
+	position: absolute;
+	left: 167px;
+	top: 11px;
+}
+#p-portrait p.big {
+	text-align: left;
+}
+
+
+
+/*
+	#p-media
+*/
+#p-media img {
+	margin: 0 10px 0 0;
+}
+
+
+
+/*
+	#p-find
+*/
+#p-find {
+	background: #fff url(../img/bg.find.png) no-repeat bottom right;
+}
+#p-find-results {
+	background: #eeebe7 url(../img/bg.find-results.png) no-repeat bottom left;
+	margin-bottom: 5px;
+	padding-top: 5px;
+}
+#p-find-results div {
+	margin: 0;
+	float: left;
+	width: 85px;
+	text-align: left;
+	padding: 15px 0 10px 15px;
+}
+
+
+
+/*
+	#p-wall
+*/
+#p-wall {
+	background: #fff url(../img/bg.breaks.png) no-repeat bottom right;
+}
+#p-wall div {
+	border-bottom: 1px solid #e4e4e4;
+	margin-top: 0;
+	padding: 10px;
+}
+#p-wall div p, #p-wall div h5, #p-wall div h6 {
+	margin: 10px 0 10px 115px;
+}
+#p-wall .tools {
+	text-align: right;
+	margin-bottom: 5px;
+}
+#p-wall .tools a {
+	padding: 1px 0 2px 20px;
+	margin-left: 10px;
+}
+#p-wall .tools a.reply  { background: url(../img/ico.post.reply.png) no-repeat; }
+#p-wall .tools a.post   { background: url(../img/ico.post.post.png) no-repeat; }
+#p-wall .tools a.delete { background: url(../img/ico.post.delete.png) no-repeat; }
+#p-wall img.ava {
+	float: left;
+	margin-right: -100%;
+}
+#p-wall div h5 {
+	margin-top: 0;
+}
+#p-wall div h5 span {
+	font-weight: normal;
+	font-size:11px;
+	margin-left: 10px;
+}
+
+
+
+/*
+	#p-blog
+*/
+#p-blog div {
+	border-bottom: 1px solid #e4e4e4;
+	margin-top: 0;
+	padding: 10px;
+}
+#p-blog div p, #p-blog div h5 {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*
+	#p-blogext
+*/
+#p-blogext div {
+	border-bottom: 1px solid #e4e4e4;
+	margin-top: 0;
+	padding: 10px;
+}
+#p-blogext div p, #p-blogext div h5 {
+	margin: 0;
+	padding: 0;
+}
+#p-blogext div p img {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+#p-blogext div p.alr {
+	padding-top: 10px;
+}
+
+#p-blogext div.inactive p, #p-blogext div.inactive h5, #p-blogext div.inactive h6 {
+	color: #9a9a9a;
+}
+
+
+
+#p-blogext .pager {
+	text-align: center;
+	padding: 0;
+	margin: 20px 115px 0 15px;
+	border: none;
+}
+
+
+
+/*
+	#p-events
+*/
+
+
+
+/*
+	#p-leader
+*/
+
+
+
+/*
+	#p-friends
+*/
+#p-friends table {
+	width:214px;
+	margin:17px 0 0 4px; 
+}
+#p-friends td {
+	padding: 5px 0 5px 10px;
+}
+#p-friends .txt {
+	width:100%; padding-right:10px
+}
+#p-friends img {
+	vertical-align: top;
+}
+#p-friends .icons {
+	vertical-align: bottom;
+	line-height: 24px;
+	text-align: right;
+}
+#p-friends .icons img {
+	position: relative;
+	vertical-align: baseline;
+	top: 2px;
+}
+#p-friends .name {color:#000}
+#p-friends .more {margin-left:15px; margin-top:7px}
+
+
+/*
+	#p-tags
+*/
+#p-tags {
+	line-height: 1.2;
+}
+#p-tags a {
+	color: #837e75;
+	text-decoration: none;
+	padding: 2px 3px;
+	margin: 0 4px 0 0;
+}
+#p-tags a:hover {
+	text-decoration: none;
+	color: #fff;
+	background: #837e75;
+}
+
+
+
+/*
+	#p-calendar
+*/
+#p-calendar div span, #p-calendar div a {
+	float: left;
+	margin: 0 6px 10px 0;
+	width: 20px;
+	display: block;
+	text-indent: 2px;
+	font-size: 10px;
+	padding-top: 5px;
+}
+#p-calendar div a {
+	background: #fec92c;
+	color: #000;
+	text-decoration: none;
+}
+#p-calendar div a:hover {
+	color: #fff;
+}
+#p-calendar div span {
+	background: #b8b2a8;
+	color: #fff;
+}
+#p-calendar div span.empty {
+	background: #ededed;
+	color: #ededed;
+}
+#p-calendar p img {
+	margin: 0;
+}
+#p-calendar div.clear {
+	height: 0;
+	line-height: 0;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+}

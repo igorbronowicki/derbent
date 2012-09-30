@@ -1,0 +1,241 @@
+/*
+	Common styles. Only element selectors, no classes and ids!
+*/
+body {
+	font: 11px/1.4 Verdana, sans-serif;
+	color: #2e2c29;
+	background: #f3f1ee;
+}
+a, a:visited {
+	text-decoration: underline;
+	color: #837e75;
+}
+a:hover {
+	text-decoration: none;
+	color: #000;
+}
+a.invert, a.invert:visited {
+	color:#000;	
+}
+a.invert:hover {
+	color: #837e75;
+}
+big, .big {
+	font-size: 12px;
+}
+strong {
+	font-weight: bold;
+}
+/* heads */
+h5 {
+	font-weight: bold;
+	font-size: 12px;
+}
+h6 {
+	margin: 5px 0;
+	font-weight: normal;
+}
+
+td {
+	vertical-align: middle;
+}
+hr {
+	background: #e4e4e4;
+	height: 1px;
+	line-height: 1px;
+	border: 0;
+	margin: 15px;
+}
+a img {
+	border: none;
+	outline: none;
+	text-decoration: none;
+}
+
+
+/*
+	Usefull classes
+*/
+.odd, .odd td {
+	background: #fbfbfb;
+}
+.fll { float: left; }
+.flr { float: right; }
+.all { text-align: left; }
+.alc { text-align: center; }
+.alr { text-align: right; }
+.more {
+	font-size: 12px;
+	clear: both;
+	text-align: left;
+}
+.bee {
+	color: #ffc10b;
+}
+
+
+/* 
+	UI
+*/
+button {
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	border: 0;
+	display: block;
+	cursor: pointer;
+}
+.button1 {
+	background: url(img/form.button1.png) no-repeat;
+	width: 90px;
+	height: 34px;
+	padding: 2px 5px 6px 5px;
+}
+input, select {
+	font-size: inherit;
+	font-family: Verdana, sans-serif;
+	line-height: 16px;
+	padding: 2px;
+	border: 1px solid #d2d3d3;
+}
+.w1 { width: 30px; }
+.w2 { width: 40px; float: left; }
+
+
+
+
+/*
+	Markup. Classes and their childs.
+*/
+.clear
+{
+	background: none;
+	border: 0;
+	clear: both;
+	display: block;
+	float: none;
+	font-size: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+/* Horizontal wrapper and columns */
+.wrapper {
+	width: 980px;
+	margin: 0 auto;
+	clear: both;
+}
+#x-center {
+	float: left;
+	width: 520px;
+	background: #fff url(img/bg.shadow.mid.fat.png) repeat-y;
+}
+#x-left, #x-right {
+	float: left;
+	width: 230px;
+	background: #fff url(img/bg.shadow.mid.png) repeat-y;
+}
+
+/* Bottom corners */
+.bottom {
+	height: 30px;
+	margin-top: -10px;
+}
+#x-center .bottom {
+	background: url(img/bg.shadow.bot.fat.png) no-repeat;
+}
+#x-left .bottom, #x-right .bottom {
+	background: url(img/bg.shadow.bot.png) no-repeat;
+}
+
+/* Top corners */
+.top {
+	padding: 14px 19px 10px 19px;
+}
+#x-left .top {
+	padding-bottom: 15px;
+}
+#x-center .top {
+	background: url(img/bg.shadow.top.fat.png) no-repeat;
+	line-height: 31px;
+}
+#x-right .top, #x-left .top {
+	width: 192px;
+	background: url(img/bg.shadow.top.png) no-repeat;
+}
+
+.top p {
+	margin-bottom: 10px;
+}
+
+
+
+
+/*
+	Common Blocks
+*/
+/* Logo */
+#logo {
+	margin: 20px 16px 30px 10px;
+	width: 204px;
+	float: left;
+}
+
+/* Menu */
+#menu {
+	margin-top: 10px;
+	width: 750px;
+	height: 73px;
+	float: left;
+	background: #f3f1ee url(img/bg.shadow.menu.png) no-repeat top left;
+}
+#menu a {
+	color: #000;
+}
+#menu dl {
+	float: left;
+	width: 530px;
+	height: 65px;
+	margin: 2px 0 4px 20px;
+	_margin-left: 10px;
+	position: relative;
+}
+#menu dt {
+	float: left;
+	cursor: default;
+	font-size: 13px;
+	line-height: 40px;
+	padding: 0 20px;
+}
+#menu dd {
+	line-height: 28px;
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+	display: none;
+}
+#menu p {
+	clear: right;
+	line-height: 14px;
+	padding: 12px 30px 0 0;
+	white-space: nowrap;
+}
+
+/* Footer */
+#footer {
+	padding: 30px 0 10px 0;
+	font-weight: bold;
+	text-align: center;
+}
+#footer a, #footer a:visited {
+	color: #000;
+	text-decoration: none;
+}
+#footer a:hover {
+	text-decoration: underline;
+}

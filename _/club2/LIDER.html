@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Билайн-Кафе</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/palettes.css" media="all" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" /><![endif]-->
+<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="css/ie6.css" /><![endif]-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#p-find button').click(function(){
+				$('#p-find-results').toggle();
+				return false;
+			});
+
+			$('#menu dt').hover(function(){
+				$('#menu dt').removeClass('bee');
+				$('#menu dd').hide();
+				$(this).addClass('bee');
+				$(this).next().show();
+			}, function(){
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<a href="#"><img src="img/logo.png" alt="Билайн Кафе" id="logo" /></a>
+		
+		<div id="menu">
+			<p class="flr"><span class="bee">рус</span> | <a href="#">укр</a></p>
+			<p class="b-stat-nolog">Количество он-лайн пользователей:  мужского пола <a href="#">34354</a> &nbsp; женского пола <a href="#">23423</a></p>
+		</div>
+		<div class="clear">&nbsp;</div>
+
+	</div>
+
+	<div class="wrapper">
+
+		<!-- Left Column  -->
+		<div id="x-left">
+			<div class="top m-top-p">
+				<div class="palette" id="p-event">
+					<h2 class="grey"><a href="#">Ближайшее событие</a></h2>
+					<p>
+						<img src="data/event.jpg" alt="Терминатор 4" class="fll" />
+						<strong>"Терминатор 4"</strong><br />
+						Кинотеатр «<a href="#">Киев</a>», сеанс 21:30, 8 флаеров
+					</p>
+					<p class="big"><a href="#">Детальнее</a></p>
+
+					<p class="more"><a href="#">Все мероприятия</a></p>
+				</div>
+			</div>
+			
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+
+
+		<!-- Center Column  -->
+		<div id="x-center">
+			<div class="top b-simple-b">
+				<div class="for-editor">
+					<h1>Как стать лидером кафе?</h1>
+					<p>Стать популярным так просто!<br />
+					Отправляйте SMS-сообщение на номер 2323 и становитесь новым лидером кафе!<br />
+					Отправив на одно SMS-сообщение больше, чем у текущего лидера ваша фотография со ссылкой на блог автоматически размещается на всех страницах портала.</p>
+					<p>Если вы хотите проголосовать за своего друга, отправте SMS с его никнеймом на номер 2323.<br />
+					Вы лидер, пока у вас на счету максимальное количество сообщений.<br />
+					Каждые 5 минут у лидера списывается по одному сообщению.</p>
+				</div>
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+
+
+		<!-- Right Column  -->
+		<!-- Right Column  -->
+		<div id="x-right">
+			<div class="top m-top-p">
+				<div class="palette" id="p-leeder">
+					<h2 class="grey"><a href="#">Лидер CAFE</a></h2>
+					<p>
+						<img src="data/ava3.jpg" alt="" class="fll" />
+						<big><a href="#">Banda</a></big><br />
+						Возраст: 24 года<br />
+						Город: Киев<br />
+						Пол: жен
+					</p>
+
+					<p class="more"><a href="#">Стать лидером</a></p>
+				</div>
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+		
+		<div class="clear">&nbsp;</div>
+
+	</div>
+
+	<div class="wrapper" id="footer">
+		<a href="#">Правила</a> | <a href="#">Помощь</a> | <a href="#">О портале</a> | <a href="#">Мобильная версия</a> | <a href="#">Отправка SMS</a><br />
+		<a href="#">Своя мелодия</a> | <a href="#">MP3</a> | <a href="#">Полифония</a> | <a href="#">Игры</a> | <a href="#">Картинки и анимация</a> | <a href="#">RBT</a> | <a href="#">Java-игры</a> | <a href="#">Видео</a> | <a href="#">Темы</a> 
+	</div>
+
+</body>
+</html>
+
+

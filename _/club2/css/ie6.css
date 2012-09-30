@@ -1,0 +1,13 @@
+/* ------------- //height 1px// ----------------- */
+#minWidth, .clear-li li, .inp {height:1px}
+/* ------------- //height 1px// ----------------- */
+
+
+
+/* ------------- //position check// ----------------- */
+/* .show-pr {right: expression( this.parentNode.offsetWidth % 2 ? -1 : 0 )}
+.c-tr, .c-br {margin-right: expression( this.parentNode.offsetWidth % 2 ? -1 : 0 )}
+
+#bottom {bottom: expression( this.parentNode.offsetHeight % 2 ? -1 : 0 )}
+#bottom {margin-bottom: expression( this.parentNode.offsetHeight % 2 ? -1 : 0 )} */
+/* ------------- //position check// ----------------- */

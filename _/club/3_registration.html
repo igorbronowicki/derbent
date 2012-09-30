@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Билайн-Кафе</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/palettes.css" media="all" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" /><![endif]-->
+<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="css/ie6.css" /><![endif]-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#p-find button').click(function(){
+				$('#p-find-results').toggle();
+				return false;
+			});
+
+			$('#menu dt').hover(function(){
+				$('#menu dt').removeClass('bee');
+				$('#menu dd').hide();
+				$(this).addClass('bee');
+				$(this).next().show();
+			}, function(){
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<a href="#"><img src="img/logo.png" alt="Билайн Кафе" id="logo" /></a>
+		
+		<div id="menu">
+			<p class="flr"><span class="bee">рус</span> | <a href="#">укр</a></p>
+			<p class="b-stat-nolog">Количество он-лайн пользователей:  мужского пола <a href="#">34354</a> &nbsp; женского пола <a href="#">23423</a></p>
+		</div>
+		<div class="clear">&nbsp;</div>
+
+	</div>
+
+	<div class="wrapper">
+
+		<!-- Left Column  -->
+		<div id="x-left">
+			<div class="top b-simple-b">
+				<h2 class="o-title">АВТОРИЗАЦИЯ</h2>
+				<div class="b-forms m-form-authorize">
+					<div class="lbl">
+						Номер телефона
+					</div>
+					<div class="inputs">
+						<input type="text" name="sd" value="" class="i-p" />
+						<small class="note">Например: 38 068 xxx xxxx</small>
+					</div>
+					<div class="lbl">Пароль</div>
+					<div class="inputs">
+						<input type="password" name="sd" value="" class="i-p" />
+					</div>
+					<div class="b-form-btn cfix">
+						<div class="btn-left">
+							<input type="image" src="img/btn-enter.png" alt="Вход" name="das" />
+						</div>
+						<div class="btn-right">
+							<a href="#">Забыли пароль?</a><br />
+							<a href="#">Регистрация</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+
+
+		<!-- Center Column  -->
+		<div id="x-center">
+			<div class="top b-simple-b">
+				<h2 class="o-title">Регистрация</h2>
+				<div class="b-reg-form">
+					<p>Поля, отмеченные <span class="star">*</span> , обязательны для заполнения</p>
+					<div class="b-forms m-step-3-f">
+						<div class="inputs">
+							<div class="lbl">Телефонный номер</div>
+							<div class="i-view txt-view">
+								380681231231
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Пароль<span class="star">*</span></div>
+							<div class="i-view">
+								<input type="text" name="ds" value="" class="i-p" />
+								<span class="tip tip-2"><strong>Достаточный</strong><br />
+								уровень сложности</span>
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Повторение пароля<span class="star">*</span></div>
+							<div class="i-view">
+								<input type="text" name="ds" value="" class="i-p" />
+								<span class="tip">Ник <strong>свободен</strong></span>
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Ник<span class="star">*</span></div>
+							<div class="i-view">
+								<input type="text" name="ds" value="" class="i-p" />
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Дата рождения<span class="star">*</span></div>
+							<div class="i-view">
+								<select name="as" style="width:38px">
+									<option value="ds">08</option>
+								</select>
+								<select name="as" style="width:73px">
+									<option value="ds">сентябрь</option>
+								</select>
+								<select name="as" style="width:50px">
+									<option value="ds">1983</option>
+								</select>
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Пол<span class="star">*</span></div>
+							<div class="i-view">
+								<select name="as">
+									<option value="ds">мужской</option>
+								</select>
+							</div>
+						</div>
+						<div class="inputs">
+							<div class="lbl">Город<span class="star">*</span></div>
+							<div class="i-view">
+								<select name="as" style="width:118px">
+									<option value="ds">Киевская обл.</option>
+								</select>
+								<div class="sp"></div>
+								<select name="as" style="width:118px">
+									<option value="ds">г. Киев</option>
+								</select>
+							</div>
+						</div>
+						<p><a href="#">Дополнительные параметры</a></p>
+						<p>Рекомендуем заполнить поля <a href="#">расширенной формы регистрации</a>.<br />
+						Это повысит ваш рейтинг и упростит поиск вашей страницы на сайте.</p>
+						<p class="v-cb"><label><input type="checkbox" name="ss" value="" /> Я принимаю Правила пользования порталом</label></p>
+						<div class="btn btn-step-2">
+							<a href="#" class="next-btn">Зарегистрироваться</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+
+
+		<!-- Right Column  -->
+		<div id="x-right">
+			<div class="top of-bn">
+				<img src="img/fish-bn.png" width="240" height="300" alt="fish-bn" />
+			</div>
+			
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+		
+		<div class="clear">&nbsp;</div>
+
+	</div>
+
+	<div class="wrapper" id="footer">
+		<a href="#">Правила</a> | <a href="#">Помощь</a> | <a href="#">О портале</a> | <a href="#">Мобильная версия</a> | <a href="#">Отправка SMS</a><br />
+		<a href="#">Своя мелодия</a> | <a href="#">MP3</a> | <a href="#">Полифония</a> | <a href="#">Игры</a> | <a href="#">Картинки и анимация</a> | <a href="#">RBT</a> | <a href="#">Java-игры</a> | <a href="#">Видео</a> | <a href="#">Темы</a> 
+	</div>
+
+</body>
+</html>
+
+

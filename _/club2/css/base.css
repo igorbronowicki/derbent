@@ -1,0 +1,404 @@
+/*
+	Common styles. Only element selectors, no classes and ids!
+*/
+body {
+	font: 11px/1.4 Verdana, sans-serif;
+	color: #2e2c29;
+	background: #f3f1ee;
+}
+a, a:visited {
+	text-decoration: underline;
+	color: #837e75;
+}
+a:hover {
+	text-decoration: none;
+	color: #000;
+}
+a.invert, a.invert:visited {
+	color:#000;	
+}
+a.invert:hover {
+	color: #837e75;
+}
+big, .big {
+	font-size: 12px;
+}
+strong {
+	font-weight: bold;
+}
+/* heads */
+h5 {
+	font-weight: bold;
+	font-size: 12px;
+}
+h6 {
+	margin: 5px 0;
+	font-weight: normal;
+}
+
+td {
+	vertical-align: middle;
+}
+hr {
+	background: #e4e4e4;
+	height: 1px;
+	line-height: 1px;
+	border: 0;
+	margin: 15px;
+}
+a img {
+	border: none;
+	outline: none;
+	text-decoration: none;
+}
+
+
+/*
+	Usefull classes
+*/
+.odd, .odd td {
+	background: #fbfbfb;
+}
+.fll { float: left; }
+.flr { float: right; }
+.all { text-align: left; }
+.alc { text-align: center; }
+.alr { text-align: right; }
+.more {
+	font-size: 12px;
+	clear: both;
+	text-align: left;
+}
+.bee {
+	color: #ffc10b;
+	font-size:14px; 
+}
+
+
+/* 
+	UI
+*/
+button {
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	border: 0;
+	display: block;
+	cursor: pointer;
+}
+.button1 {
+	background: url(../img/form.button1.png) no-repeat;
+	width: 90px;
+	height: 34px;
+	padding: 2px 5px 6px 5px;
+}
+input, select {
+	font-size: inherit;
+	font-family: Verdana, sans-serif;
+	line-height: 16px;
+	padding: 2px;
+	border: 1px solid #d2d3d3;
+}
+.w1 { width: 30px; }
+.w2 { width: 40px; float: left; }
+
+
+
+
+/*
+	Markup. Classes and their childs.
+*/
+.clear
+{
+	background: none;
+	border: 0;
+	clear: both;
+	display: block;
+	float: none;
+	font-size: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+/* Horizontal wrapper and columns */
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	clear: both;
+}
+#x-center {
+	float: left;
+	width: 520px;
+	background: #fff url(../img/bg.shadow.mid.fat.png) repeat-y;
+}
+#x-left {
+	float: left;
+	width: 230px;
+	background: #fff url(../img/bg.shadow.mid.png) repeat-y;
+}
+
+/* Bottom corners */
+.bottom {
+	height: 30px;
+	margin-top: -10px;
+}
+#x-center .bottom {
+	background: url(../img/bg.shadow.bot.fat.png) no-repeat;
+}
+#x-left .bottom {
+	background: url(../img/bg.shadow.bot.png) no-repeat;
+}
+
+#x-right .bottom {background-image:url(../img/side-r-btm.png)}
+
+/* Top corners */
+.top {
+	padding: 14px 19px 10px 19px;
+}
+#x-left .top {
+	padding-bottom: 15px;
+}
+#x-center .top {
+	background: url(../img/bg.shadow.top.fat.png) no-repeat;
+	line-height: 31px;
+	padding-left:24px; 
+}
+#x-left .top {
+	background: url(../img/bg.shadow.top.png) no-repeat;
+}
+
+#x-right {
+	float: right;
+	width: 250px;
+	background: #fff url(../img/side-r-bg.png) repeat-y;
+}
+
+#x-right .top {
+	background: url(../img/side-r-tp.png) no-repeat;
+}
+
+.top p {
+	margin-bottom: 10px;
+}
+
+
+
+
+/*
+	Common Blocks
+*/
+/* Logo */
+#logo {
+	margin: 20px 16px 30px 10px;
+	width: 204px;
+	float: left;
+}
+
+/* Menu */
+#menu {
+	margin-top: 10px;
+	width: 770px;
+	height: 71px;
+	float: left;
+	background: #fff url(../img/navigation-bg.png) no-repeat 0 0;
+}
+#menu a {
+	color: #000;
+}
+#menu dl {
+	float: left;
+	width: 530px;
+	height: 65px;
+	margin: 2px 0 4px 20px;
+	_margin-left: 10px;
+	position: relative;
+}
+#menu dt {
+	float: left;
+	cursor: default;
+	font-size: 13px;
+	line-height: 40px;
+	padding: 0 20px;
+}
+#menu dd {
+	line-height: 28px;
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+	display: none;
+}
+#menu p {
+	clear: right;
+	line-height: 14px;
+	padding: 12px 30px 0 0;
+	white-space: nowrap;
+}
+
+/* Footer */
+#footer {
+	padding: 30px 0 10px 0;
+	font-weight: bold;
+	text-align: center;
+}
+#footer a, #footer a:visited {
+	color: #000;
+	text-decoration: none;
+}
+#footer a:hover {
+	text-decoration: underline;
+}
+
+/* // ---- top block ---- // */
+.b-stat-nolog {color:#4b4b4b; font-size:10px; text-align:right}
+	.b-stat-nolog a {color:#837e75 !important}
+/* -- ---- top block ---- -- */
+
+/* // ---- forms ---- // */
+.b-forms {}
+	.b-forms .i-p {padding:1px 1px 2px 5px; font:11px/13px Verdana,Tahoma}
+	.b-forms .lbl {font-size:12px; line-height:normal; text-shadow:0 1px 0 #e8e8e8}
+	.b-forms .note {display:block; clear:both; color:#aeaeae; font-size:9px; padding-top:4px}
+	.b-forms select {font-size:11px; padding:1px 0}
+		.b-forms select option {font-size:11px}
+/* -- ---- forms ---- -- */
+
+.m-form-authorize {position:relative; margin-top:-1px}
+	.m-form-authorize .lbl {padding-bottom:6px}
+	.m-form-authorize .i-p {width:176px}
+	.m-form-authorize .inputs {padding-bottom:11px}
+	.m-form-authorize .btn-left {position:relative; float:left; left:-2px; padding-top:2px}
+	.m-form-authorize .btn-left input {border-width:0; padding:0}
+	.m-form-authorize .btn-right {float:right; text-align:right; line-height:17px; padding-right:7px}
+
+/* // ---- reg form ---- // */
+.b-reg-form {height:auto !important; height:280px; min-height:280px}
+	.b-reg-form p {padding-bottom:15px}
+	.b-reg-form .inputs {padding-left:150px; padding-bottom:23px}
+	.b-reg-form .lbl {position:relative; left:-150px; float:left; width:140px; margin-right:-150px; padding-top:2px}
+	.b-reg-form select {float:left; margin-right:6px}
+	.b-reg-form .i-p {float:left; width:132px}
+	.b-reg-form .next-btn {font-size:13px; padding-right:9px; background:url(../img/ar-r.gif) no-repeat 100% 7px}
+	.b-reg-form .our-code-sms {position:relative; width:270px; padding-bottom:11px}
+		.b-reg-form .our-code-sms .reset-all {position:absolute; left:100%; bottom:13px; border-width:0; width:auto; height:auto}
+			.b-reg-form .our-code-sms .reset-all a {color:#837e75 }
+		.b-reg-form .our-code-sms li {float:left; width:46px; height:44px; border:2px solid #edeef0; margin:0 3px 3px 0}
+		.b-reg-form .our-code-sms img {vertical-align:top}
+	.b-reg-form .btn-step-2 {padding-top:10px}
+	.b-reg-form .txt-view {color:#949494; padding-top:3px}
+	.b-reg-form .sp {clear:both; font-size:1px; height:13px}
+	.m-step-3-f {}
+		.m-step-3-f .inputs {padding-bottom:12px}
+		.m-step-3-f p {padding-bottom:13px; margin-bottom:0; line-height:16px}
+		.m-step-3-f .i-p {width:166px}
+		.star {color:#ffb500}
+		.m-step-3-f .tip {position:absolute; left:196px; color:#aeaeae; font-size:11px; line-height:14px; top:1px}
+		.m-step-3-f .tip-2 {top:-3px}
+		.m-step-3-f .i-view {position:relative}
+		.m-step-3-f .v-cb {vertical-align:middle}
+			.m-step-3-f .v-cb input, .m-step-3-f .v-cb label {vertical-align:middle}
+			.m-step-3-f .v-cb input {border-width:0; padding:0}
+/* -- ---- reg form ---- -- */
+
+/* // ---- m-extend-form ---- // */
+.m-extend-form {padding-bottom:20px}
+	.m-extend-form .lbl-t {float:left; padding:2px 10px 0 0; font-size:12px; line-height:normal}
+	.m-extend-form .i-p {float:left; margin-right:10px; width:143px}
+	.m-extend-form select {float:left; margin-right:10px; width:151px}
+	.m-extend-form .inputs {padding-left:173px; padding-bottom:15px}
+		.m-extend-form .inputs .lbl {position:relative; float:left; left:-173px; margin-right:-173px; width:165px; padding-top:2px}
+	.m-extend-form .extend-form-row {padding-bottom:15px}
+	.m-extend-form .extend-form-row .lbl {float:left; padding-top:2px; padding-right:21px}
+	.m-extend-form .extend-form-row select {width:110px; margin-right:21px}
+	.m-extend-form .extend-form-row .i-p, .m-extend-form .i-height {width:37px}
+	.m-extend-form .btn {padding-left:3px}
+		.m-extend-form .btn input {position:relative; left:-7px; border-width:0; padding:0; margin-bottom:3px}
+/* -- ---- m-extend-form ---- -- */
+
+.o-title {color:#febf26; font-size:18px; text-transform:uppercase; padding-bottom:16px}
+
+.b-simple-b {line-height:normal !important; padding-left:21px}
+
+.of-bn {padding:20px 0 10px; text-align:center}
+
+.card-user {padding-left:6px}
+	.card-user dt {color:#ecb923; font-size:14px; font-weight:bold}
+	.card-user dd {font-size:11px}
+	.card-user dd a {color:#4d4d4d}
+		.card-user dd .big a {color:#837e75}
+	.card-user .ph {padding:4px 0 6px}
+
+.b-content {padding:0 15px 0 24px}
+
+.chk-line {padding-top:1px}
+	.chk-line li {position:relative; float:left; padding:0 17px 0 16px}
+
+.gray-title {position:relative; margin:0 -11px 17px -20px; color:#fff; font-weight: bold; font-size: 13px; line-height:24px; color: #000; padding:1px 20px 2px 21px; background-color:#d0c8ba}
+	.gray-title a {color:#fff !important}
+
+/* // ---- search people ---- // */
+.search-people {position:relative; margin-left:-20px}
+	.search-people li {float:left; padding:0 0 0 130px; width:120px; height:131px}
+	.search-people .img-cover {position:relative; float:left; left:-110px; margin-right:-110px; margin-top:4px}
+	.search-people h4 {font-size:12px}
+		.search-people h4 a {color:#2e2c29}
+	.search-people p {line-height:16px}
+/* -- ---- search people ---- -- */
+
+.for-editor {line-height:14px}
+	.for-editor h1 {color:#837e75; font-size:18px; padding:6px 0 16px; line-height:normal}
+	.for-editor p {margin-bottom:0; padding-bottom:13px}
+
+.m-top-p {padding:19px 0 0}
+
+.pager {
+	padding:3px 0 18px;
+	margin:0 115px 0 0;
+	border: none;
+}
+.pager a {display:-moz-inline-stack; display:inline-block; padding-top:5px}
+.pager img {
+	vertical-align: top;
+	margin:6px 0 0;
+}
+.pager span, .pager a.page {
+	padding:6px 10px 0 3px; 
+	font-size:10px;
+	vertical-align:top;
+	display:-moz-inline-stack; display:inline-block;
+}
+
+.pager span.page {
+	background: #fec92c;
+	color: #000;
+}
+.pager a.page {
+	background: #b8b2a8;
+	color: #fff;
+	text-decoration: none;
+}
+.pager a.page:hover {
+	background: #fec92c;
+	color: #fff;
+}
+
+.jumper {
+	float:right; 
+	padding: 0;
+	text-align: right;
+	border: none;
+	padding-top:3px
+}
+.jumper input {
+	color:#656361; 
+	width: 30px;
+	padding:2px 0 3px;
+	text-align:center;
+	border-color:#a29e97;
+	line-height:13px;
+	vertical-align:bottom
+}

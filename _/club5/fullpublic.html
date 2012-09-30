@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Билайн-Кафе</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/palettes.css" media="all" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#p-find button').click(function(){
+				$('#p-find-results').toggle();
+				return false;
+			});
+
+			$('#menu dt').hover(function(){
+				$('#menu dt').removeClass('bee');
+				$('#menu dd').hide();
+				$(this).addClass('bee');
+				$(this).next().show();
+			}, function(){
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<a href="#"><img src="img/logo.png" alt="Билайн Кафе" id="logo" /></a>
+		
+		<div id="menu">
+			<p class="flr"><span class="bee">рус</span> | <a href="#">укр</a></p>
+			<p class="b-stat-nolog">Количество он-лайн пользователей:  мужского пола <a href="#">34354</a> &nbsp; женского пола <a href="#">23423</a></p>
+		</div>
+		<div class="clear">&nbsp;</div>
+
+	</div>
+
+	<div class="wrapper wrapper-grid-1">
+
+		<!-- Left Column  -->
+		<div id="x-left">
+			<div class="top">
+				<dl class="card-user">
+					<dt>Banda</dt>
+					<dd>
+						Таня Степенко
+						<div class="ph">
+							<img src="data/ava1.jpg" alt="" />
+						</div>
+						<p class="big"><a href="#">укажите ваш статус</a></p>
+						<p>
+							Возраст: 24 года<br />
+							Расположение: Украина, <a href="#">Киев</a><br />
+							Телефон: SonyErricsson 580w<br />
+							Пол: <a href="#">жен</a><br />
+							Рост см: <a href="#">170</a><br />
+							Вес кг: <a href="#">55</a><br />
+							Семейное положение: <strong><a href="#">замужем</a></strong>
+						</p>
+						<p class="big">
+							<a href="#">Изменить профиль</a><br />
+							<a href="#">Детальнее</a>
+						</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="palette" id="p-portrait">
+				<h2 class="grey"><a href="#">Мой портрет</a></h2>
+				<p>
+					общительность
+					<span class="rail"><img src="img/x.png" width="30" /></span>
+					<span class="unit">20%</span>
+				</p>
+				<p>
+					неуверенность
+					<span class="rail"><img src="img/x.png" width="146" /></span>
+					<span class="unit">100%</span>
+				</p>
+				<p>
+					уверенность
+					<span class="rail"><img src="img/x.png" width="100" /></span>
+					<span class="unit">65%</span>
+				</p>
+				<p>
+					открытость
+					<span class="rail"><img src="img/x.png" width="70" /></span>
+					<span class="unit">46%</span>
+				</p>
+				<p>
+					сексуальность
+					<span class="rail"><img src="img/x.png" width="130" /></span>
+					<span class="unit">90%</span>
+				</p>
+
+				<p class="more" style=" text-align: left;"><a href="#">Больше</a></p>
+
+			</div>
+			
+			<div class="palette" id="p-calendar">
+					<h2 class="yellow">Календарь записей</h2>
+					<div>
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<span>3</span>	
+						<span>4</span>
+						<span>5</span>
+
+						<span>6</span>
+						<span>7</span>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<span>10</span>	
+						<span>11</span>
+						<span>12</span>
+
+						<span>13</span>
+						<span>14</span>
+						<a href="#">15</a>
+						<a href="#">16</a>
+						<span>17</span>	
+						<span>18</span>
+						<span>19</span>
+
+						<span>20</span>
+						<span>21</span>
+						<a href="#">22</a>
+						<a href="#">23</a>
+						<span>24</span>	
+						<span>25</span>
+						<span>26</span>
+
+						<span>27</span>
+						<span>28</span>
+						<a href="#">29</a>
+						<a href="#">30</a>
+						<span>31</span>
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+						<span class="empty">&nbsp;</span>
+
+						<div class="clear"> </div>
+					</div>
+
+					<p class="alc">
+						<a href="#" title="Июль 2009"><img src="img/ico.farrow.prev.png" /></a>&emsp;
+						<strong class="bee">Август 2009</strong>
+						&emsp;<a href="#" title="Сентябрь 2009"><img src="img/ico.farrow.next.png" /></a>
+					</p>
+				</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+
+
+		<!-- Center Column  -->
+		<div id="x-center">
+			<div class="top">
+				<a href="#">Banda</a> &gt; <strong>Тени забытых городов</strong>
+			</div>
+			<div class="b-content">
+				<h2 class="yellow-title"><a href="#">Мой Блог</a> (5)</h2>
+					<div class="for-editor">
+						<div class="heading-pl">
+							<h1>Тени забытых городов.</h1>
+							<div class="dt">28.05.2009  14:24:20</div>
+						</div>
+						<div class="cont-pl">
+							<img alt="" src="data/foto.1.jpg" class="img-left" />
+							<p>Среди городов Древнего Востока Вавилон был, пожалуй, самым почитаемым. Само название города — Баб-Илу (Ворота Бога) — говорило о его святости, об особом покровительстве богов. Верховному вавилонскому богу Мардуку поклонялись многие народы, даже не подвластные Вавилону, его храмы и жрецы получали</p>
+							<p>Вавилон не был одним из древнейших городов Междуречья — шумерские города Ур, Урук, Эриду и другие были примерно на тысячу лет старше.</p>
+							<p>Почти на два тысячелетия Вавилон был одним из крупнейших центров древней цивилизации. Он возник в результате ряда политических изменений в Месопотамии. Под ударами скотоводов-амореев пало централизованное государство — царство Шумера и Аккада, созданное III династией Ура. Не преминули воспользоваться легкой добычей и эламиты, обрушившиеся на Южную Месопотамию. Так, на территории Двуречья возникло множество мелких и средних , царств, около двухсот лет воевавших друг с другом.</p>
+							<p>Почти во всех государствах Двуречья утвердились аморейские династии, основателями которых стали вожди племен завоевателей. С течением времени пришельцы ассимилировались с местным населением.</p>
+							<div class="small-tags">
+								<strong>Метки публикации:</strong> <a href="#">Вавилон</a>, <a href="#">Баб-Илу</a>, <a href="#">царство</a>
+							</div>
+						</div>
+					</div>
+					<div class="send-message cont-pl">
+						<p class="smes-tls"><a href="#">Редактировать</a> <a href="#">Удалить</a> <strong class="o">Оставить комментарий</strong></p>
+						<div><textarea name="ds" rows="10" cols="30" style="width:458px"></textarea></div>
+						<a href="#">Оставить комментарий</a>
+					</div>
+				<h2 class="small-com">Комментарии</h2>
+				<ul class="clear-li list-comments list-smallcomments">
+					<li>
+						<img src="data/event.jpg" alt="" width="38" height="42" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big>banda</big>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li><a href="#">Удалить</a></li>
+								<li><a href="#">Редактировать</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="zb">
+						<img src="data/event.jpg" alt="" width="38" height="42" class="img-cover" />
+						<div class="i-view">
+							<div class="author">
+								<big>banda</big>
+							</div>
+							<p>25.05.09 в 23:20 написал:</p>
+							<p>Спілкуйтесь безкоштовно в тарифі «Бум!» - поповнюйте рахунок усього на 20 грн. в місяць і!</p>
+							<ul class="prop-comments">
+								<li><a href="#">Удалить</a></li>
+								<li><a href="#">Редактировать</a></li>
+							</ul>
+						</div>
+					</li>
+					
+				</ul>
+				
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+
+
+		<!-- Right Column  -->
+		<div id="x-right" class="small-right">
+			<div class="top">
+				Количество он-лайн пользователей: <a href="#">34354</a>
+			</div>
+
+			<div>
+				<div class="palette" id="p-event">
+					<h2 class="grey"><a href="#">Ближайшее событие</a></h2>
+					<p>
+						<img src="data/event.jpg" alt="Терминатор 4" class="fll" />
+						<strong>"Терминатор 4"</strong><br />
+						Кинотеатр «<a href="#">Киев</a>», сеанс 21:30, 8 флаеров
+					</p>
+					<p class="big"><a href="#">Детальнее</a></p>
+
+					<p class="more"><a href="#">Все мероприятия</a></p>
+				</div>
+
+				<div class="palette" id="p-leeder">
+					<h2 class="grey"><a href="#">Лидер CAFE</a></h2>
+					<p>
+						<img src="data/ava3.jpg" alt="" class="fll" />
+						<big><a href="#">Banda</a></big><br />
+						Возраст: 24 года<br />
+						Город: Киев<br />
+						Пол: жен
+					</p>
+
+					<p class="more"><a href="#">Стать лидером</a></p>
+				</div>
+
+				<div class="palette" id="p-tags">
+					<h2 class="yellow">Метки</h2>
+					<p>
+						<a href="#" style="font-size: 1em;">finnish</a>
+						<a href="#" style="font-size: 1em;">folk</a>
+						<a href="#" style="font-size: 1.2em;">metal</a>
+						<a href="#" style="font-size: 1em;">fun</a>
+						<a href="#" style="font-size: 1em;">funk</a>
+						<a href="#" style="font-size: 1.4em;">german</a>
+						<a href="#" style="font-size: 1em;">food</a>
+						<a href="#" style="font-size: 1.3em;">grindcore</a>
+						<a href="#" style="font-size: 1em;">grunge</a>
+						<a href="#" style="font-size: 2.5em;">guitar</a>
+						<a href="#" style="font-size: 1em;">hard rock</a>
+						<a href="#" style="font-size: 1em;">hardcore</a>
+						<a href="#" style="font-size: 2em;">indie</a>
+						<a href="#" style="font-size: 1em;">hop</a>
+						<a href="#" style="font-size: 1.5em;">house</a>
+						<a href="#" style="font-size: 1em;">hiphop</a>
+						<a href="#" style="font-size: 1em;">j-rock</a>
+						<a href="#" style="font-size: 1em;">instrumental</a>
+						<a href="#" style="font-size: 1.3em;">j-pop</a>
+						<a href="#" style="font-size: 1em;">idm</a>
+					</p>
+				</div>
+				
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+		
+		<div class="clear">&nbsp;</div>
+
+	</div>
+
+	<div class="wrapper" id="footer">
+		<a href="#">Правила</a> | <a href="#">Помощь</a> | <a href="#">О портале</a> | <a href="#">Мобильная версия</a> | <a href="#">Отправка SMS</a><br />
+		<a href="#">Своя мелодия</a> | <a href="#">MP3</a> | <a href="#">Полифония</a> | <a href="#">Игры</a> | <a href="#">Картинки и анимация</a> | <a href="#">RBT</a> | <a href="#">Java-игры</a> | <a href="#">Видео</a> | <a href="#">Темы</a> 
+	</div>
+
+</body>
+</html>
+
+

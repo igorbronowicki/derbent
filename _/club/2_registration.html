@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Билайн-Кафе</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/palettes.css" media="all" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" /><![endif]-->
+<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="css/ie6.css" /><![endif]-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#p-find button').click(function(){
+				$('#p-find-results').toggle();
+				return false;
+			});
+
+			$('#menu dt').hover(function(){
+				$('#menu dt').removeClass('bee');
+				$('#menu dd').hide();
+				$(this).addClass('bee');
+				$(this).next().show();
+			}, function(){
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<a href="#"><img src="img/logo.png" alt="Билайн Кафе" id="logo" /></a>
+		
+		<div id="menu">
+			<p class="flr"><span class="bee">рус</span> | <a href="#">укр</a></p>
+			<p class="b-stat-nolog">Количество он-лайн пользователей:  мужского пола <a href="#">34354</a> &nbsp; женского пола <a href="#">23423</a></p>
+		</div>
+		<div class="clear">&nbsp;</div>
+
+	</div>
+
+	<div class="wrapper">
+
+		<!-- Left Column  -->
+		<div id="x-left">
+			<div class="top b-simple-b">
+				<h2 class="o-title">АВТОРИЗАЦИЯ</h2>
+				<div class="b-forms m-form-authorize">
+					<div class="lbl">
+						Номер телефона
+					</div>
+					<div class="inputs">
+						<input type="text" name="sd" value="" class="i-p" />
+						<small class="note">Например: 38 068 xxx xxxx</small>
+					</div>
+					<div class="lbl">Пароль</div>
+					<div class="inputs">
+						<input type="password" name="sd" value="" class="i-p" />
+					</div>
+					<div class="b-form-btn cfix">
+						<div class="btn-left">
+							<input type="image" src="img/btn-enter.png" alt="Вход" name="das" />
+						</div>
+						<div class="btn-right">
+							<a href="#">Забыли пароль?</a><br />
+							<a href="#">Регистрация</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+
+
+		<!-- Center Column  -->
+		<div id="x-center">
+			<div class="top b-simple-b">
+				<h2 class="o-title">Регистрация</h2>
+				<div class="b-reg-form">
+					<p>Для регистрации введите свой телефонный номер и нажмите кнопку "Далее"</p>
+					<div class="b-forms">
+						<div class="inputs">
+							<div class="lbl">Телефонный номер</div>
+							<div class="i-view">
+								<select name="ds">
+									<option value="sd">38068</option>
+								</select>
+								<input type="text" name="ds" class="i-p" />
+								<small class="note">Например: 38068xxxxxxx</small>
+							</div>
+						</div>
+						<p>На ваш телефон было отправлено SMS с кодом оегистрации. Ввдите код, выбирая цифры на картинках ниже.</p>
+						<ul class="cfix our-code-sms">
+							<li>
+								
+							</li>
+							<li>
+								
+							</li>
+							<li>
+								
+							</li>
+							<li>
+								
+							</li>
+							<li>
+								
+							</li>
+							<li class="reset-all"><a href="#">Очистить</a></li>
+						</ul>
+						<ul class="cfix our-code-sms">
+							<li>
+								<a href="#"><img src="img/reg-cap-1.png" width="46" height="44" alt="1" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/reg-cap-2.png" width="46" height="44" alt="2" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/reg-cap-3.png" width="46" height="44" alt="3" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/reg-cap-4.png" width="46" height="44" alt="4" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/reg-cap-5.png" width="46" height="44" alt="5" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/reg-cap-6.png" width="46" height="44" alt="6" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/reg-cap-7.png" width="46" height="44" alt="7" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/reg-cap-8.png" width="46" height="44" alt="8" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/reg-cap-9.png" width="46" height="44" alt="9" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/reg-cap-10.png" width="46" height="44" alt="10" /></a>
+							</li>
+						</ul>
+						<div class="btn btn-step-2">
+							<a href="#" class="next-btn">Далее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+
+
+		<!-- Right Column  -->
+		<div id="x-right">
+			<div class="top of-bn">
+				<img src="img/fish-bn.png" width="240" height="300" alt="fish-bn" />
+			</div>
+			
+
+			<div class="bottom">&nbsp;</div>
+		</div>
+		
+		<div class="clear">&nbsp;</div>
+
+	</div>
+
+	<div class="wrapper" id="footer">
+		<a href="#">Правила</a> | <a href="#">Помощь</a> | <a href="#">О портале</a> | <a href="#">Мобильная версия</a> | <a href="#">Отправка SMS</a><br />
+		<a href="#">Своя мелодия</a> | <a href="#">MP3</a> | <a href="#">Полифония</a> | <a href="#">Игры</a> | <a href="#">Картинки и анимация</a> | <a href="#">RBT</a> | <a href="#">Java-игры</a> | <a href="#">Видео</a> | <a href="#">Темы</a> 
+	</div>
+
+</body>
+</html>
+
+
